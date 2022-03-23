@@ -1,19 +1,23 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
+</div>
 
+<div class="container">
 <p>
-  <strong>Title:</strong>
+  <strong>Titre :</strong>
   <%= @event.title %>
 </p>
 
 <p>
-  <strong>Category:</strong>
+  <strong>Categorie :</strong>
   <%= @event.category %>
 </p>
 
 <p>
-  <strong>Image url:</strong>
+  <strong>Illustration :</strong>
   <%= @event.image_url %>
 </p>
 
-<%= link_to 'Edit', edit_event_path(@event) %> |
-<%= link_to 'Back', events_path %>
+<%= link_to 'Modifier', edit_event_path(@event) %> |
+<%= link_to 'Retour', events_path %>
+</div>
