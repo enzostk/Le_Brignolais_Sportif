@@ -15,27 +15,27 @@
 
 <div class="container">
   <div class="field">
-    <%= form.label :titre %>
+    <%= form.label :title, value = "Titre :" %>
     <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :categorie %>
+    <%= form.label :category, value = "Catégorie :" %>
     <%= form.text_field :category %>
   </div>
 
   <div class="field">
-    <%= form.label :voir_album %>
+    <%= form.label :link_to, value = "Lien de l'album :" %>
     <%= form.text_field :link_to %>
   </div>
 
   <div class="field">
-    <%= form.label :Illustration %>
+    <%= form.label :image_url, value = "Illustration :" %>
     <%= form.text_field :image_url %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit value = "Créer album" %>
   </div>
   <% end %>
 </div>
