@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  resources :events
-  resources :albums
-  devise_for :users
   root to: "articles#index"
+  devise_for :users
+  resources :events
+  resources :clubs
+  resources :albums
   resources :partners
   resources :articles
 end
