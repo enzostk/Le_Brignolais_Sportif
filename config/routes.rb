@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root to: "articles#index"
   resources :results
   resources :events
+  resources :clubs
   resources :albums
   resources :partners
   resources :articles
