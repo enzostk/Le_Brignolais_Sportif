@@ -1,24 +1,28 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+</div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @album.title %>
-</p>
+<div class="container">
+  <p>
+    <strong>Titre :</strong>
+    <%= @album.title %>
+  </p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @album.category %>
-</p>
+  <p>
+    <strong>Categorie :</strong>
+    <%= @album.category %>
+  </p>
 
-<p>
-  <strong>Link to:</strong>
-  <%= @album.link_to %>
-</p>
+  <p>
+    <strong>Voir l'album :</strong>
+    <%= @album.link_to %>
+  </p>
 
-<p>
-  <strong>Image url:</strong>
-  <%= @album.image_url %>
-</p>
+  <p>
+    <strong>Illustration :</strong>
+    <%= @album.image_url %>
+  </p>
 
-<%= link_to 'Edit', edit_album_path(@album) %> |
-<%= link_to 'Back', albums_path %>
+  <%= link_to 'Modifier', edit_album_path(@album) %> |
+  <%= link_to 'Retour', albums_path %>
+</div>
