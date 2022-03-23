@@ -1,0 +1,26 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Titre :</strong>
+    <%= @article.title %>
+  </p>
+
+  <p>
+    <strong>Categorie :</strong>
+    <%= @article.category %>
+  </p>
+
+  <p>
+    <strong>Contenu :</strong>
+    <%= @article.content %>
+  </p>
+
+  <p>
+    <strong>Illustration :</strong>
+    <%= @article.image_url %>
+  </p>
+
+  <%= link_to "Modifier", edit_article_path(@article) %> |
+  <%= link_to "Retour", articles_path %>
+</div>
