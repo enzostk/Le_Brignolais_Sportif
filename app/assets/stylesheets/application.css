@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+ :root {
+
+    --prim : #ffffff ;
+    --second : #050563;
+    --tert : #ffffff;
+    --quad : #ffffff;
+    --rp : #ffffff;
+    --rpf : #ffffff;
+    --mr : #ffffff;
+    --bg : #ffffff;
+    --brf : #ffffff;
+    --danger : rgb(255, 44, 44);
+    --success : rgb(50, 163, 5);
+ 
+  }
