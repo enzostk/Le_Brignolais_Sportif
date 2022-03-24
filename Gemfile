@@ -66,3 +66,4 @@ gem "rspec", :groups => [:development, :test]
 gem "devise"
 gem "stripe"
 gem "validate_url"
+gem 'administrate', '~> 0.17.0'
