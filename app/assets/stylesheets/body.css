@@ -2,7 +2,8 @@
 
 body {
     background-color: var(--second)!important;
- }
+    color: white!important;
+}
 
  h1,h2,h3 {
     color: var(--prim);
