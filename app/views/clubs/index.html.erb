@@ -1,5 +1,4 @@
-<p id="notice"><%= notice %></p>
-
+<div class="container">
 <h1>Clubs</h1>
 
 <table>
@@ -23,13 +22,10 @@
         <td><%= club.category %></td>
         <td><%= club.link_to %></td>
         <td><%= link_to 'Show', club %></td>
-        <td><%= link_to 'Edit', edit_club_path(club) %></td>
-        <td><%= link_to 'Destroy', club, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Club', new_club_path %>
+</div>
