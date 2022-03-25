@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   resources :albums
   resources :partners
   resources :articles
+  resources :comments
 end
