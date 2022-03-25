@@ -14,4 +14,8 @@ h5,p {
     font-family: montserrat;
 }
 
+label {
+
+    color: var(--prim);
+}
 
