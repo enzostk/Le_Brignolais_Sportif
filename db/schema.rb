@@ -33,45 +33,6 @@ ActiveRecord::Schema.define(version: 2022_03_25_135557) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "billing_customers", force: :cascade do |t|
-    t.bigint "user_id"
-    t.string "stripeid", null: false
-    t.string "default_source"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_billing_customers_on_user_id"
-  end
-
-  create_table "billing_plans", force: :cascade do |t|
-    t.bigint "billing_products_id", null: false
-    t.string "stripeid", null: false
-    t.string "stripe_plan_name"
-    t.decimal "amount", precision: 10, scale: 2, null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["billing_products_id"], name: "index_billing_plans_on_billing_products_id"
-  end
-
-  create_table "billing_products", force: :cascade do |t|
-    t.string "stripeid", null: false
-    t.string "stripe_product_name", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "billing_subscriptions", force: :cascade do |t|
-    t.bigint "billing_plan_id", null: false
-    t.bigint "billing_customer_id", null: false
-    t.string "stripeid", null: false
-    t.string "status", null: false
-    t.datetime "current_period_end"
-    t.datetime "cancel_at"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["billing_customer_id"], name: "index_billing_subscriptions_on_billing_customer_id"
-    t.index ["billing_plan_id"], name: "index_billing_subscriptions_on_billing_plan_id"
-  end
-
   create_table "clubs", force: :cascade do |t|
     t.string "name"
     t.text "description"
@@ -80,16 +41,6 @@ ActiveRecord::Schema.define(version: 2022_03_25_135557) do
     t.string "link_to"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "comments", force: :cascade do |t|
-    t.text "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.bigint "user_id"
-    t.integer "commented_on_id"
-    t.string "commented_on_type"
-    t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
   create_table "events", force: :cascade do |t|
@@ -134,5 +85,4 @@ ActiveRecord::Schema.define(version: 2022_03_25_135557) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "comments", "users"
 end
