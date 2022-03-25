@@ -20,6 +20,7 @@ class UserDashboard < Administrate::BaseDashboard
     unconfirmed_email: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    admin: Field::Boolean,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -49,6 +50,7 @@ class UserDashboard < Administrate::BaseDashboard
     unconfirmed_email
     created_at
     updated_at
+    admin
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -64,6 +66,7 @@ class UserDashboard < Administrate::BaseDashboard
     confirmed_at
     confirmation_sent_at
     unconfirmed_email
+    admin
   ].freeze
 
   # COLLECTION_FILTERS
