@@ -20,6 +20,7 @@
     <%= @album.image_url %>
   </p>
 
+  <%= link_to "Commenter", album_comments_path(@album) %>
   <%= link_to 'Modifier', edit_album_path(@album) %> |
   <%= link_to 'Retour', albums_path %>
 </div>
