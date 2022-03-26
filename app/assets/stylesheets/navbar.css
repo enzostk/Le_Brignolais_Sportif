@@ -61,6 +61,16 @@ input[type="search"], input[type="search"]::selection {
 /* #########################################################  */
 
 
+
+/* STYLE NAVBAR-MENU  */
+
+
+.yenox{
+    display: flex; flex-direction: row;
+
+}
+
+
   .btn-nav2
 
   {
@@ -68,7 +78,6 @@ input[type="search"], input[type="search"]::selection {
     color: var(--prim)!important;
     border-color: var(--prim)!important;
     width: 250px!important;
-
   }
 
   .btn-nav2:hover {
