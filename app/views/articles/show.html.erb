@@ -21,8 +21,8 @@
     <%= @article.image_url %>
   </p>
 
-  <%= render partial: "comments/comments", locals:{commented_on: @article} %>
-  <%= render partial: "comments/form", locals:{commented_on: @article} %>
+  <%= render partial: "comments/comments", locals: {commented_on: @article} %>
+  <%= render partial: "comments/form", locals: {commented_on: @article} %>
 
   <%= link_to "Commenter", new_article_comment_path(@article) %>
   <%= link_to "Modifier", edit_article_path(@article) %> |

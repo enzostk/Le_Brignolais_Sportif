@@ -20,8 +20,8 @@
     <%= @album.image_url %>
   </p>
 
-  <%= render partial: "comments/comments", locals:{commented_on: @album} %>
-  <%= render partial: "comments/form", locals:{commented_on: @album} %>
+  <%= render partial: "comments/comments", locals: {commented_on: @album} %>
+  <%= render partial: "comments/form", locals: {commented_on: @album} %>
 
   <%= link_to "Commenter", album_comments_path(@album) %>
   <%= link_to 'Modifier', edit_album_path(@album) %> |
