@@ -6,7 +6,7 @@ class User < ApplicationRecord
 
   after_create :welcome_send
 
-  has_many :comments
+  has_many :comments, dependent: :destroy
 
   def welcome_send
     UserMailer.welcome_email(self).deliver_now
