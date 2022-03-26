@@ -1,13 +1,13 @@
  /* = require_self */
  
- /* BANNER  */
+ /* STYLE BANNER  */
 
 
 
  .banner {
 
     height: 562px;
-    background:linear-gradient( rgba(107, 105, 105, 0.5),rgba(107, 105, 105, 0.5),rgba(107, 105, 105, 0.5),var(--second)), url("https://i.imgur.com/R9t7yMS.jpg");
+    background:linear-gradient( rgba(107, 105, 105, 0.5),rgba(107, 105, 105, 0.5),rgba(107, 105, 105, 0.5),var(--second)), url("https://i.imgur.com/QcmmsTp.png");
 
     background-repeat: no-repeat;
 
