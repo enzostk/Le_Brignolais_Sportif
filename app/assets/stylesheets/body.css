@@ -2,7 +2,8 @@
 
 body {
     background-color: var(--second)!important;
- }
+    color: white!important;
+}
 
  h1,h2,h3 {
     color: var(--prim);
@@ -14,4 +15,8 @@ h5,p {
     font-family: montserrat;
 }
 
+label {
+
+    color: var(--prim);
+}
 
