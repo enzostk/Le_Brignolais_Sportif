@@ -14,15 +14,15 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :events do
-    resources :comments
+    resources :comments, module: :events
   end
 
   resources :albums do
-    resources :comments
+    resources :comments, module: :albums
   end
 
   resources :articles do
-    resources :comments
+    resources :comments, module: :articles
   end
 
   resources :partners
