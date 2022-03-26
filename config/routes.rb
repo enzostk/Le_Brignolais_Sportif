@@ -1,22 +1,31 @@
 Rails.application.routes.draw do
   namespace :admin do
-      resources :users
-      resources :albums
-      resources :articles
-      resources :clubs
-      resources :events
-      resources :partners
-      resources :results
-      root to: "users#index"
-    end
-    
-  devise_for :users
+    resources :users
+    resources :albums
+    resources :articles
+    resources :clubs
+    resources :events
+    resources :partners
+    resources :results
+    root to: "users#index"
+  end
+
   root to: "articles#index"
-  resources :results
-  resources :events
-  resources :clubs
-  resources :albums
+  devise_for :users
+
+  resources :events do
+    resources :comments
+  end
+
+  resources :albums do
+    resources :comments
+  end
+
+  resources :articles do
+    resources :comments
+  end
+
   resources :partners
-  resources :articles
-  resources :comments
+  resources :clubs
+  resources :results
 end
