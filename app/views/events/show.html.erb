@@ -1,20 +1,24 @@
 <div class="container">
-<p id="notice"><%= notice %></p>
-<p>
-  <strong>Titre :</strong>
-  <%= @event.title %>
-</p>
+  <p id="notice"><%= notice %></p>
+  <p>
+    <strong>Titre :</strong>
+    <%= @event.title %>
+  </p>
 
-<p>
-  <strong>Categorie :</strong>
-  <%= @event.category %>
-</p>
+  <p>
+    <strong>Categorie :</strong>
+    <%= @event.category %>
+  </p>
 
-<p>
-  <strong>Illustration :</strong>
-  <%= @event.image_url %>
-</p>
+  <p>
+    <strong>Illustration :</strong>
+    <%= @event.image_url %>
+  </p>
 
-<%= link_to 'Modifier', edit_event_path(@event) %> |
-<%= link_to 'Retour', events_path %>
+  <%= render partial: "comments/comments", locals:{commented_on: @event} %>
+  <%= render partial: "comments/form", locals:{commented_on: @event} %>
+
+  <%= link_to "Commenter", event_comments_path(@event) %>
+  <%= link_to 'Modifier', edit_event_path(@event) %> |
+  <%= link_to 'Retour', events_path %>
 </div>

@@ -43,6 +43,16 @@ ActiveRecord::Schema.define(version: 2022_03_25_145306) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "comments", force: :cascade do |t|
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.integer "commented_on_id"
+    t.string "commented_on_type"
+    t.index ["user_id"], name: "index_comments_on_user_id"
+  end
+
   create_table "events", force: :cascade do |t|
     t.string "title"
     t.string "category"
@@ -86,4 +96,5 @@ ActiveRecord::Schema.define(version: 2022_03_25_145306) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "comments", "users"
 end
