@@ -12,13 +12,11 @@
   </p>
 
   <p>
-    <strong>Contenu :</strong>
-    <%= @article.content %>
+    <%= image_tag @article.image_url %>
   </p>
 
   <p>
-    <strong>Illustration :</strong>
-    <%= @article.image_url %>
+    <%= @article.content %>
   </p>
 
   <%= render partial: "comments/comments", locals: {commented_on: @article} %>
