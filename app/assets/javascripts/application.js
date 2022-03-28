@@ -19,15 +19,15 @@
 
 // Je fais une fonction qui va m'aider à appeller un bouton qui ramenera l'utilisateur vers le haut de la page grâce à une ancre sans besoin de scroller 
 // On remarque que le bouton n'apparaît pas lorsqu'on est dans le header 
-// jQuery(function(){
-//     $(function () {
-//         $(window).scroll(function () {
-//             if ($(this).scrollTop() > 200 ) {
-//                 $('#scrollUp').css('right','10px');
-//             } else {
-//                 $('#scrollUp').removeAttr( 'style' );
-//             }
+jQuery(function(){
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200 ) {
+                $('#scrollUp').css('right','10px');
+            } else {
+                $('#scrollUp').removeAttr( 'style' );
+            }
 
-//         });
-//     });
-// });
+        });
+    });
+});

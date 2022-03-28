@@ -1,4 +1,5 @@
-const publicKey = document.querySelector("meta[name='stripe-key']").content;
+window.addEventListener("load", function() {
+const publicKey = document.querySelector("meta[name='stripe_key']").content;
 const stripe = Stripe(publicKey);
 
 const elements = stripe.elements({
@@ -12,7 +13,7 @@ const elements = stripe.elements({
     base: {
       color: "#32325d",
       fontWeight: 500,
-      fontFamily: "Inter UI, Open Sans, Segoe UI, sans-serif",
+      fontFamily: "sans-serif",
       fontSize: "16px",
       fontSmoothing: "antialiased",
 
@@ -76,3 +77,5 @@ function addCardField(form, token, field) {
   hiddenInput.setAttribute('value', token.card[field]);
   form.appendChild(hiddenInput);
 }
+
+})
