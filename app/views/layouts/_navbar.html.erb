@@ -17,6 +17,7 @@
         <% end %>
   
         <%# Navbar utilisateur %>
+        <%= link_to "S'abonner", pricing_index_path, class:"btn btn-nav me-2" %>
         <%= link_to "Mon compte", edit_user_registration_path, class:"btn btn-nav me-2" %>
         <%= link_to "Log-out", destroy_user_session_path , method: :delete, class:"btn btn-signup"%>
       <%else%>
