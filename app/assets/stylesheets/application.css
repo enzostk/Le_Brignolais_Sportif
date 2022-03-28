@@ -16,7 +16,7 @@
 
  :root {
 
-    --prim : #ffffff ;
+    --prim : #ffffff;
     --second : #050563;
     --tert : #a73939;
     --quad : #ffffff;
@@ -30,3 +30,14 @@
  
   }
   
+.center , label {
+  color: black!important;
+  background: white;
+  border-radius: 10px;
+}
+  
+.center h1 {
+  color: black!important;
+}
+
+
