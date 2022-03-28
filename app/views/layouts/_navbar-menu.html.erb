@@ -1,20 +1,14 @@
-
-
-  
-  
-    <table>
-      <thead >
-        <tr class="yenox">
-          <th class="btn btn-nav2 btn-card my-5">Actualité&nbsp;&nbsp;</th>
-          <th class="btn btn-nav2 btn-card my-5">Résultats&nbsp;&nbsp;</th>
-          <th class="btn btn-nav2 btn-card my-5">Agenda&nbsp;&nbsp;</th>
-          <th class="btn btn-nav2 btn-card my-5">Album</th>
-          <th class="btn btn-nav2 btn-card my-5">Clubs&nbsp;&nbsp;</th>
-          <th class="btn btn-nav2 btn-card my-5">LBS&nbsp;&nbsp;</th>
-          <th class="btn btn-nav2 btn-card my-5">Partenaires</th>
-          <th class="btn btn-nav2 btn-card my-5">Archives&nbsp;&nbsp;</th>
-          <th class="btn btn-nav2 btn-card my-5">Contact</th>
-          <th colspan="3"></th>
-        </tr>
-      </thead>
-      
+<header class="p-3 pg-nav ">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <%= link_to "Actualités", articles_path , class:"btn btn-nav2 btn-card me-2 my-1"%>
+      <%= link_to "Résultats", results_path , class:"btn btn-nav2 btn-card me-2 my-1"%>
+      <%= link_to "Agenda", events_path , class:"btn btn-nav2 btn-card me-2 my-1"%>
+      <%= link_to "Albums", albums_path , class:"btn btn-nav2 btn-card me-2 my-1"%>
+      <%= link_to "Clubs", clubs_path , class:"btn btn-nav2 btn-card me-2 my-1"%>
+      <%= link_to "Partenaires", partners_path , class:"btn btn-nav2 btn-card me-2 my-1"%>
+      <%= link_to "Archives", new_user_session_path , class:"btn btn-nav2 btn-card me-2 my-1"%>
+      <%= link_to "Contacts",new_user_session_path, class:"btn btn-nav2 btn-card me-2 my-1"%>
+    </div>
+</div>
+</header>

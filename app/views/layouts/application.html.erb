@@ -24,13 +24,15 @@
   </head>
 
   <body>
+  
     <%= render 'layouts/navbar'  %>
     <%= render 'layouts/banner'  %>
-    <%= render 'layouts/navbar-menu'  %>
     <%= render 'layouts/flash'  %>
+  <div class="container">  
+    <%= render 'layouts/navbar-menu'  %> <hr>
     <%= yield %>
+  </div>  
     <%= render 'layouts/footer'  %>
-
    <!--Add Homemade JavaScript-->
     <script src="asset/javascripts/app.js"></script>
     <!--Add JavaScript Boostrap-->
