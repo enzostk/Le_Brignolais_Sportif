@@ -2,6 +2,9 @@
 .bg-nav {
     background-color: var(--prim)!important;
 }
+.pg-nav {
+    background-color: transparent!important;
+}
 .btn {
     font-family: Poppins, Arial, Helvetica, sans-serif !important;
 }
@@ -65,25 +68,18 @@ input[type="search"], input[type="search"]::selection {
 /* STYLE NAVBAR-MENU  */
 
 
-.yenox{
+.yenox {
     display: flex; flex-direction: row;
-
 }
 
 
-  .btn-nav2
+.btn-nav2 {
+  color: var(--prim)!important;
+  border-color: var(--prim)!important;
+  width: 110px!important;
+}
 
-  {
-
-    color: var(--prim)!important;
-    border-color: var(--prim)!important;
-    width: 150px!important;
-
-  }
-
-  .btn-nav2:hover {
-    color: var(--second)!important;
-    background-color: var(--prim) !important;
-
-
+.btn-nav2:hover {
+  color: var(--second)!important;
+  background-color: var(--prim) !important;
 }
