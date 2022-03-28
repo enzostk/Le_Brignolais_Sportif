@@ -78,4 +78,4 @@ function addCardField(form, token, field) {
   form.appendChild(hiddenInput);
 }
 
-})
+});
