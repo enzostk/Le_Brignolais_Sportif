@@ -1,32 +1,31 @@
 <div class="container">
-<p id="notice"><%= notice %></p>
-<h1>Clubs</h1>
+	<div class="text-center">
+		<h1>L'annuaire des associations sportives brignolaises !</h1>
+		<h5>
+			Cliquez sur leur logo pour ouvrir leur page avec tous leurs renseignements.
+		</h5>
+		<br>
+	</div>
+	<div class="row">
+		<% @clubs.each do |club| %>
+		<div class="col-lg-2 mb-4">
+			<div class="row">
+				<div class="col-md-12">
+				<a href="<%= club.link_to %>"><%= image_tag club.image_url, class:"img-fluid rounded-circle" %></a>
+				</div>
+				<div class="col-md-12 text-center">
+					<div class="pt-2">
+						<h5 class="mt-4 font-weight-medium mb-0">
+							<%= club.category %>
+						</h5>
+						<h6 class="subtitle mb-3">
+							<%= club.name %>
+						</h6>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th>Category</th>
-      <th>Link to</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @clubs.each do |club| %>
-      <tr>
-        <td><%= club.name %></td>
-        <td><%= club.description %></td>
-        <td><%= club.image_url %></td>
-        <td><%= club.category %></td>
-        <td><%= club.link_to %></td>
-        <td><%= link_to 'Show', club %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<% end %>
+	</div>
 </div>
