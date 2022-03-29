@@ -7,14 +7,19 @@
       <h1>Articles</h1>
       <div class="col-lg-8">
          <!-- Featured blog post-->
+             
+   
          <div class="card mb-4">
-            <a href="#!"><img class="card-img-top" src="https://midiminuit.media/wp-content/uploads/2020/10/Capture-decran-2020-10-22-a-09.38.27.png" alt="content" /></a>
+         <% @articles.each do |article| %>
+            <a href="#!"><%= image_tag article.image_url, class:"card-img-top" %></a>
             <div class="card-body">
                <div class="small text-muted b">January 1, 2022</div>
-               <h2 class="card-title b">Titre</h2>
-               <p class="card-text b">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-               <a class="btn btn-primary" href="#!">Lire plus →</a>
+               <h2 class="card-title b"><%= article.title %></h2>
+               <p class="card-text b"><%= article.content %></p>
+               <a><%= link_to "Lire →", article, class:"btn btn-primary" %></a>
             </div>
+            
+            <% end %>
          </div>
       </div>
    </div>
