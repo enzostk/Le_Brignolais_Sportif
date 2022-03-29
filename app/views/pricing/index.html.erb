@@ -1,19 +1,20 @@
-<section class="section">
+<div class="container">
   <div class="has-text-centered box">
-    <h1 class="title">Abonnements</h1>
-    <h2 class="subtitle">Abonnez-vous au Brignolais Sportif pour un mois, six mois ou pour un an !</h2>
+    <h1>Abonnements</h1>
+    <h5>Les utilisateurs premium ont accès à tous les articles et évènements et ont la possibilité de les commenter.
+    Ils ont aussi la possibilité de définir des sports favoris afin d'être informés de la mise en ligne d'un article ou d'un événement de leurs sports favoris.</h5>
     <div class="pricing-table">
       <div class="pricing-plan is-warning">
         <div class="plan-header">Mensuel</div>
         <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">€</span>3</span>&nbsppar mois</div>
         <div class="plan-items">
-          <div class="plan-item">Un Mois</div>
+          <div class="plan-item"><strong>1 Mois</strong></div>
         </div>
         <div class="plan-footer">
           <% if user_signed_in? %>
-            <%= link_to "S'abonner", new_subscription_path(plan: "one_month", plan_id: Rails.application.credentials.one_month), class:"button is-fullwidth" %>
+            <%= link_to "S'abonner", new_subscription_path(plan: "1 mois", plan_id: Rails.application.credentials.one_month), class:"btn btn-warning" %>
           <% else %>
-            <%= link_to "S'abonner", new_user_registration_path, class: 'button is-fullwidth' %>
+            <%= link_to "S'abonner", new_user_registration_path, class: 'btn btn-warning' %>
          <% end %>
         </div>
       </div>
@@ -21,13 +22,13 @@
         <div class="plan-header">Biannuel</div>
         <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">€</span>15</span>&nbsptout les 6 mois</div>
         <div class="plan-items">
-          <div class="plan-item">Six Mois</div>
+          <div class="plan-item"><strong>6 Mois</strong></div>
         </div>
         <div class="plan-footer">
            <% if user_signed_in? %>
-            <%= link_to "S'abonner", new_subscription_path(plan: "six_months", plan_id: Rails.application.credentials.six_months), class:"button is-fullwidth" %>
+            <%= link_to "S'abonner", new_subscription_path(plan: "6 mois", plan_id: Rails.application.credentials.six_months), class:"btn btn-primary" %>
           <% else %>
-            <%= link_to "S'abonner", new_user_registration_path, class: 'button is-fullwidth' %>
+            <%= link_to "S'abonner", new_user_registration_path, class: 'btn btn-primary' %>
          <% end %>
         </div>
       </div>
@@ -35,16 +36,17 @@
         <div class="plan-header">Annuel</div>
         <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">€</span>25</span>&nbsppar an</div>
         <div class="plan-items">
-          <div class="plan-item">Un an</div>
+          <div class="plan-item"><strong>Un an</strong></div>
         </div>
         <div class="plan-footer">
          <% if user_signed_in? %>
-            <%= link_to "S'abonner", new_subscription_path(plan: "one_year", plan_id: Rails.application.credentials.one_year), class:"button is-fullwidth" %>
+            <%= link_to "S'abonner", new_subscription_path(plan: "1 an", plan_id: Rails.application.credentials.one_year), class:"btn btn-danger" %>
           <% else %>
-            <%= link_to "S'abonner", new_user_registration_path, class: 'button is-fullwidth' %>
+            <%= link_to "S'abonner", new_user_registration_path, class: 'btn btn-danger' %>
          <% end %>
         </div>
       </div>
     </div>
   </div>
-</section>
+  <br><br>
+</div>
