@@ -11,4 +11,8 @@ class User < ApplicationRecord
   def welcome_send
     UserMailer.welcome_email(self).deliver_now
   end
+
+  def subscriber?
+    stripe_subscription_id?
+  end
 end

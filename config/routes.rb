@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   end
 
   root to: "articles#index"
+
   devise_for :users
 
   resources :events do
@@ -25,6 +26,8 @@ Rails.application.routes.draw do
     resources :comments, module: :articles
   end
 
+  resources :subscriptions
+  resources :pricing, only:[:index]
   resources :partners
   resources :clubs
   resources :results

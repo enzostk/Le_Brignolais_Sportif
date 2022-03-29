@@ -63,6 +63,7 @@ gem "table_print", :groups => [:development, :test]
 gem "faker"
 gem "letter_opener", :groups => [:development, :test]
 gem "rspec", :groups => [:development, :test]
+gem "better_errors", :groups => [:development, :test]
 gem "devise"
 gem "stripe"
 gem "validate_url"
