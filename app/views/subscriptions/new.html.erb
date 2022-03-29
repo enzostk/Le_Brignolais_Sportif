@@ -1,14 +1,16 @@
-<div class="section">
-  <div class="column-is-centered">
-    <div class="column is-6 border pa5">
-      <h1 class="title is-3">S'abonner</h1>
+<div class="container">
+  <div class="center">
+  <br>
+	<br>
+    <div class="text-center row justify-content-center">
+      <h1>S'abonner</h1>
+        <div class="col-xs-2 col-sm-6 col-md-6 col-lg-6">
       <hr/>
-      <p>Abonnement choisi : <strong><%= params[:plan] %></strong></p>
+      <p>Abonnement choisi : <strong><%= params[:plan] %> ✅</strong></p>
       <hr/>
       <%= form_tag subscriptions_path, method:"post", id: "payment-form" do |form| %>
         <div class="field">
-          <label for="card-element" class="label">Entrez vos informations de paiement</label>
-
+          <label for="card-element" class="label">Entrez vos informations de <strong>paiement</strong> 💳</label><br>
           <div id="card-element">
           </div>
 
@@ -16,10 +18,12 @@
 
           <%= hidden_field_tag :plan_id, params[:plan_id] %>
 
-          <button class="button is-fullwidth is-link mt4">S'abonner</button>
-
+      <hr/>        
+          <button class="btn btn-nav mb-4">S'abonner</button>
+      <br>
         </div>
       <% end %>
     </div>
+  </div>
   </div>
 </div>
