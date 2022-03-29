@@ -6,14 +6,71 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-@categories = ["Football","Basketball","Volleyball","Hockey","Cyclisme"]
-
-Album.destroy_all
-Article.destroy_all
-Club.destroy_all
-Event.destroy_all
-Result.destroy_all
 Partner.destroy_all
+
+partner = Partner.create!(
+  name: "Miroiterie Brignolaise",
+  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+  link_to: "https://www.miroiterie-brignolaise.com/",
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000112-112e7112e9/450/Grand%20-%20Miroiterie%20Brignolaise.png?ph=35f5dda702"
+);
+
+partner = Partner.create!(
+  name: "Aviva",
+  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+  link_to: "https://agences.aviva.fr/brignoles/",
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000110-66cfb66cfd/450/Moyen%20-%20Aviva.png?ph=35f5dda702"
+);
+
+partner = Partner.create!(
+  name: "Elixir Coiffure",
+  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+  link_to: "https://www.facebook.com/librairielebateaublanc/",
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000141-4099b4099c/450/Moyen%20-%20Elixir%20-%20Copie-4.jpg?ph=35f5dda702"
+);
+
+partner = Partner.create!(
+  name: "Le Bateau Blanc",
+  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+  link_to: "https://www.facebook.com/groups/358933790814543",
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000139-d6444d6446/450/Sans%20titre.png?ph=35f5dda702"
+);
+
+partner = Partner.create!(
+  name: "O four",
+  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+  link_to: "https://www.facebook.com/O-four-105055051775418",
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000155-f220cf220e/450/Moyen%20-%20O%20Four-2.jpg?ph=35f5dda702"
+);
+
+partner = Partner.create!(
+  name: "Le Croque Bedaine",
+  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+  link_to: "https://www.facebook.com/le.croque.bedaine.brignoles",
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000300-eac4deac4f/450/Moyen%20-%20Le%20Croque%20Bedaine.jpg?ph=35f5dda702"
+);
+
+partner = Partner.create!(
+  name: "Allo Taxi Romain",
+  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+  link_to: "https://www.allo-taxi-romain.fr/transport",
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000301-c517dc5180/450/Moyen%20-%20Allo%20Taxi%20Romain.jpg?ph=35f5dda702"
+);
+
+partner = Partner.create!(
+  name: "Un jour un Ange",
+  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+  link_to: "https://fleuristes-et-fleurs.com/fleuriste/un-jour-un-ange-brignoles-83170",
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000111-576a5576a6/450/Petit%20-%20Un%20jour%20un%20ange.png?ph=35f5dda702"
+);
+
+partner = Partner.create!(
+  name: "Hema Services",
+  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+  link_to: "https://www.hemaservices.fr/",
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000150-d6815d6817/450/Petit%20-%20Hema%20Services.jpg?ph=35f5dda702"
+);
+
 
 # club = Club.create!(
 #   name: "C.S. Brignoles Athlétisme",
@@ -230,6 +287,3 @@ Partner.destroy_all
 #   link_to: "https://www.facebook.com/profile.php?id=100072499160854",
 #   image_url: "https://zupimages.net/up/22/13/yyvh.jpg"
 # );
-
-
-
