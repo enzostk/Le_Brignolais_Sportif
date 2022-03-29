@@ -15,51 +15,221 @@ Event.destroy_all
 Result.destroy_all
 Partner.destroy_all
 
-5.times do |i| album = Album.create!(
-  title: Faker::Games::LeagueOfLegends.champion,
-  category: @categories.sample,
-  link_to: "https://www.google.fr/",
-  image_url: "https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"
-);
-end
+# club = Club.create!(
+#   name: "C.S. Brignoles Athlétisme",
+#   category: "Athlétisme",
+#   link_to: "https://www.facebook.com/groups/358933790814543",
+#   image_url: "https://zupimages.net/up/22/13/jioc.png"
+# );
 
-5.times do |i| article = Article.create!(
-  title: Faker::Games::LeagueOfLegends.champion,
-  category: @categories.sample,
-  content: Faker::Lorem.sentence(word_count: 5),
-  image_url: "https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"
-);
-end
+# club = Club.create!(
+#   name: "Badminton Club Brignolais",
+#   category:  "Badminton",
+#   link_to: "https://www.facebook.com/Badminton-Club-Brignolais-110634663808573",
+#   image_url: "https://zupimages.net/up/22/13/c3kq.jpg"
+# );
 
-5.times do |i| club = Club.create!(
-  name: Faker::Games::LeagueOfLegends.champion,
-  description: Faker::Lorem.sentence(word_count: 5),
-  category: @categories.sample,
-  link_to: "https://www.google.fr/",
-  image_url: "https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"
-);
-end
+# club = Club.create!(
+#   name: "Brignoles Basket Ball",
+#   category: "Basketball",
+#   link_to: "https://www.facebook.com/BrignolesBasketBall",
+#   image_url: "https://zupimages.net/up/22/13/rqjs.png"
+# );
+
+# club = Club.create!(
+#   name: "Ginga Mundo France",
+#   category:  "Capoeira",
+#   link_to: "https://www.gingamundo.fr/accueil",
+#   image_url: "https://zupimages.net/up/22/13/mw6j.png"
+# );
+
+# club = Club.create!(
+#   name: "Club Alpin Brignoles",
+#   category: "Club Alpin",
+#   link_to: "https://brignoles.ffcam.fr/",
+#   image_url: "https://zupimages.net/up/22/13/mw6j.png"
+# );
+
+# club = Club.create!(
+#   name: "Court Forest Brignoles",
+#   category:  "Course à pied",
+#   link_to: "https://courtforest.fr/",
+#   image_url: "https://zupimages.net/up/22/13/d8bx.png"
+# );
+
+# club = Club.create!(
+#   name: "Free Run Brignoles",
+#   category:  "Course à pied",
+#   link_to: "https://www.facebook.com/FREE.RUN.BRIGNOLES",
+#   image_url: "https://zupimages.net/up/22/13/x8xh.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Roue d'Or Brignoles",
+#   category:  "Cyclisme",
+#   link_to: "http://club.quomodo.com/rouedorbrignoles?fbclid=IwAR2GlhArgYnD7iCT9aYdZRgJqv_zbsUFND8RwkszoNq-j7U4vnB4PyGW0WE",
+#   image_url: "https://zupimages.net/up/22/13/tpzr.png"
+# );
+
+# club = Club.create!(
+#   name: "Détente et Loisirs",
+#   category:  "Du sport pour vous épanouir !",
+#   link_to: "https://detente-et-loisirs.wixsite.com/gymbrignoles",
+#   image_url: "https://zupimages.net/up/22/13/011d.jpg"
+# );
+
+# club = Club.create!(
+#   name: "A.S. Brignoles",
+#   category:  "Football",
+#   link_to: "http://club.quomodo.com/as-brignoles-foot/",
+#   image_url: "https://zupimages.net/up/22/13/ct1c.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Brignoles Futsal",
+#   category:  "Futsal",
+#   link_to: "https://www.facebook.com/Brignoles.futsalclub",
+#   image_url: "https://zupimages.net/up/22/13/alfy.jpg"
+# );
+
+# club = Club.create!(
+#   name: "A.S. du Golf de Barbaroux",
+#   category: "Golf",
+#   link_to: "https://www.facebook.com/golfclub.barbaroux",
+#   image_url: "https://zupimages.net/up/22/13/1oog.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Handball Club Brignolais",
+#   category:  "Handball",
+#   link_to: "https://www.handballbrignoles.fr/",
+#   image_url: "https://zupimages.net/up/22/13/iw7q.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Ecurie St-Christophe",
+#   category:  "Hippisme",
+#   link_to: "http://ecuries-saint-christophe.fr/?fbclid=IwAR0qX-_70TZOXWzzE9asLhmJcthbFLC_jHZDg-9V2FtlceInCIewnfDGJ0A",
+#   image_url: "https://zupimages.net/up/22/13/ryqo.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Team Haras Val de Camps",
+#   category:  "Hippisme",
+#   link_to: "https://haras-val-de-camps.ffe.com/",
+#   image_url: "https://zupimages.net/up/22/13/zzwu.png"
+# );
+
+# club = Club.create!(
+#   name: "Jeet Kune Do",
+#   category:  "Art martial",
+#   link_to: "https://www.jkd83.com/",
+#   image_url: "https://zupimages.net/up/22/13/4h12.jpg"
+# );
+
+# club = Club.create!(
+#   name: "A.S.D. Judo Brignoles",
+#   category:  "Judo",
+#   link_to: "https://www.facebook.com/brignoles.asdjudo",
+#   image_url: "https://zupimages.net/up/22/13/pjw5.jpg"
+# );
+
+# club = Club.create!(
+#   name: "A.S. Brignoles Karaté 83",
+#   category:  "Karaté",
+#   link_to: "https://www.facebook.com/ASBrignoleskarate",
+#   image_url: "https://zupimages.net/up/22/13/vq6p.jpg"
+# );
+
+# club = Club.create!(
+#   name: "BlackSide Brignoles",
+#   category:  "KickBoxing",
+#   link_to: "https://www.blackside-brignoles.com/",
+#   image_url: "https://zupimages.net/up/22/13/5qfb.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Krav-Maga Brignoles",
+#   category:  "Krav-Maga",
+#   link_to: "https://www.krav-maga-brignoles.fr/",
+#   image_url: "https://zupimages.net/up/22/13/7biu.png"
+# );
+
+# club = Club.create!(
+#   name: "Catouch Form",
+#   category:  "Pilates",
+#   link_to: "https://catouchform.wixsite.com/catouchform?fbclid=IwAR2wdmW13U3B0Et5W2fgK85SAMxdkCIzp-9LB7T8shamBXpTVnE4YLKLKQ0",
+#   image_url: "https://zupimages.net/up/22/13/olfi.png"
+# );
+
+# club = Club.create!(
+#   name: "Roller Hockey Brignolais",
+#   category:  "Roller Hockey",
+#   link_to: "https://www.facebook.com/groups/30897505389/",
+#   image_url: "https://zupimages.net/up/22/13/lpm5.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Rugby Provence ",
+#   category:  "Rugby",
+#   link_to: "https://rugbyprovencexv.fr/",
+#   image_url: "https://zupimages.net/up/22/13/ubrv.png"
+# );
+  
+# club = Club.create!(  
+#   name: "Seniors du Carami",
+#   category:  "Bien vieillir par le sport",
+#   link_to: "https://www.les-seniors-du-carami.fr/",
+#   image_url: "https://zupimages.net/up/22/13/r3pr.jpg"
+# );
+  
+# club = Club.create!(
+#   name: "Taekwondo Zen Attitude",
+#   category:  "Taekwondo",
+#   link_to: "https://www.facebook.com/TaekwondoZenAttitute/",
+#   image_url: "https://zupimages.net/up/22/13/4hck.jpg"
+# );
+# club = Club.create!(
+#   name: "Tennis Club de Brignoles",
+#   category:  "Tennis",
+#   link_to: "https://www.facebook.com/profile.php?id=100057109344386",
+#   image_url: "https://zupimages.net/up/22/13/mso7.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Tennis de Table Brignolais",
+#   category:  "Tennis de Table",
+#   link_to: "https://www.facebook.com/groups/616193955745671",
+#   image_url: "https://zupimages.net/up/22/13/923h.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Arc en Ciel Brignolais",
+#   category:  "Tir à l'Arc et Sarbacane",
+#   link_to: "http://www.brignoles.fr/vie-associative/annuaire-des-associations-155/arc-en-ciel-brignolais-581.html?cHash=053113c98ba1dfce6e9b4edbfb472e46",
+#   image_url: "https://zupimages.net/up/22/13/kj9j.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Compagnie Brignolaise de tir à l'arc",
+#   category:  "Tir à l'Arc",
+#   link_to: "https://www.facebook.com/CBTarc/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0",
+#   image_url: "https://zupimages.net/up/22/13/sgk3.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Triathlon Team Brignoles",
+#   category:  "Triathlon",
+#   link_to: "https://www.facebook.com/Triathlon-Team-Brignoles-279631515537997/",
+#   image_url: "https://zupimages.net/up/22/13/2r2t.jpg"
+# );
+
+# club = Club.create!(
+#   name: "Club Sportif Brignolais",
+#   category:  "Volley",
+#   link_to: "https://www.facebook.com/profile.php?id=100072499160854",
+#   image_url: "https://zupimages.net/up/22/13/yyvh.jpg"
+# );
 
 
-5.times do |i| event = Event.create!(
-  title: Faker::Games::LeagueOfLegends.champion,
-  category: @categories.sample,
-  image_url: "https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"
-);
-end
-
-5.times do |i| partner = Partner.create!(
-  name: Faker::Games::LeagueOfLegends.champion,
-  description: Faker::Lorem.sentence(word_count: 5),
-  link_to: "https://www.google.fr/",
-  image_url: "https://img-19.commentcamarche.net/WNCe54PoGxObY8PCXUxMGQ0Gwss=/480x270/smart/d8c10e7fd21a485c909a5b4c5d99e611/ccmcms-commentcamarche/20456790.jpg"
-);
-end
-
-5.times do |i| result = Result.create!(
-  title: Faker::Games::LeagueOfLegends.champion,
-  content: Faker::Lorem.sentence(word_count: 5),
-  category: @categories.sample
-  );
-end
 
