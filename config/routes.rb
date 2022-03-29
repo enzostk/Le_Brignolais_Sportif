@@ -11,21 +11,24 @@ Rails.application.routes.draw do
   end
 
   root to: "articles#index"
+
   devise_for :users
 
-  resources :events do
+  resources :events, only: [:index, :show] do
     resources :comments, module: :events
   end
 
-  resources :albums do
+  resources :albums, only: [:index, :show] do
     resources :comments, module: :albums
   end
 
-  resources :articles do
+  resources :articles, only: [:index, :show] do
     resources :comments, module: :articles
   end
 
-  resources :partners
-  resources :clubs
-  resources :results
+  resources :subscriptions
+  resources :pricing, only:[:index]
+  resources :partners, only: [:index, :show]
+  resources :clubs, only: [:index, :show]
+  resources :results, only: [:index, :show]
 end
