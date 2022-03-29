@@ -1,6 +1,25 @@
   <h3>Commentaires</h3>
   <% commented_on.comments.each do |comment| %>
   <div class="well">
-    <%= comment.content %>
+    <p><%= comment.content %></p>
+    <small>de&nbsp<%= comment.user.email %></small>
+
+    <a href="#" class="btn btn-primary comment-form-display">Répondre</a>
+    <div class="comment-form">
+      <%= render partial: 'comments/form', locals: { commented_on: @article || @event || @album, parent: comment } %>
+    </div>
+    <div class="subcomment">
+      <%= comment.comments.order(id: :desc) %>
+    </div>
   </div>
-  <% end %>
+<% end %>
+
+<script>
+  document.querySelectorAll('.comment-form-display').forEach((el) => {
+    el.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      el.nextElementSibling.style = 'display: block;';
+    })
+  })
+</script>
+
