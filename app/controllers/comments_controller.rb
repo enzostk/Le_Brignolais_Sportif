@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  # before_action :subscriber?, except: [:index, :show]
+  before_action :subscriber?, except: [:index, :show]
 
   def create
     @comment = @commented_on.comments.new comment_params
@@ -14,8 +14,8 @@ class CommentsController < ApplicationController
     params.require(:comment).permit(:content)
   end
 
-  # def subscriber?
-  #   redirect_to root_path unless current_user.try(:subscriber)
-  # end
+  def subscriber?
+    redirect_to root_path unless current_user.try(:subscriber)
+  end
 
 end
