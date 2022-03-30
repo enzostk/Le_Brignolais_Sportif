@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_28_065442) do
+ActiveRecord::Schema.define(version: 2022_03_29_160215) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 2022_03_28_065442) do
     t.bigint "user_id"
     t.integer "commented_on_id"
     t.string "commented_on_type"
+    t.integer "parent_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
