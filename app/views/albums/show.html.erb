@@ -22,7 +22,7 @@
   <%= render partial: "comments/comments", locals: {commented_on: @album} %>
   <% if current_user && current_user.subscriber || current_user && current_user.admin %>
   <%= render partial: "comments/form", locals: {commented_on: @album} %>
-  <%= link_to "Commenter", album_comments_path(@album) %>
+  <%= link_to "Commenter", album_comments_path(@album, parent: nil) %>
   <% end %>
 
   <%= link_to 'Retour', albums_path %>
