@@ -1,6 +1,59 @@
-  <h3>Commentaires</h3>
-  <% commented_on.comments.each do |comment| %>
-  <div class="well">
+<h3>Commentaires</h3>
+<% commented_on.comments.where(parent_id: nil).each do |comment| %>
+<div class="well">
+  <p>
     <%= comment.content %>
+    <br/>
+    <small>
+      de&nbsp
+      <%= comment.user.email %>
+    </small>
+  </p>
+  <% if current_user && current_user.subscriber %>
+  <a href="#" class="btn btn-primary comment-form-display">Répondre</a>
+  <div class="comment-form">
+    <%= render partial: 'comments/form', locals: { commented_on: @article || @event || @album, parent: comment } %>
   </div>
   <% end %>
+  <div class="subcomment">
+    <% comment.comments.each do |c1| %>
+    <p>
+      <%= c1.content %>
+      <br/>
+      <small>
+        de&nbsp
+        <%= c1.user.email %>
+      </small>
+    </p>
+    <% if current_user && current_user.subscriber %>
+    <a href="#" class="btn btn-primary comment-form-display">Répondre</a>
+    <div class="comment-form">
+      <%= render partial: 'comments/form', locals: { commented_on: @article || @event || @album, parent: c1 } %>
+    </div>
+    <% end %>
+    <div class="subcomment">
+      <% c1.comments.each do |c2| %>
+      <p>
+        <%= c2.content %>
+        <br/>
+        <small>
+          de&nbsp
+          <%= c2.user.email %>
+        </small>
+      </p>
+      <%end %>
+    </div>
+    <% end %>
+  </div>
+</div>
+<% end %>
+<!-- to display comment form on click -->
+<script>
+    document.querySelectorAll('.comment-form-display').forEach((el) => {
+    el.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      el.nextElementSibling.style = 'display: block;';
+    }
+    )
+  }
+</script>

@@ -8,11 +8,14 @@
     color: var(--second)!important;
     padding-bottom: 0!important;
 }
-.bd-footer, a {
+.bd-footer {
     color: var(--second)!important;
-    text-decoration: none!important;
-    
-    
+    text-decoration: none!important; 
+}
+
+.footerlink {
+    color: var(--second)!important;
+    text-decoration: none!important; 
 }
 .footerlink:hover {
     color: var(--tert) !important;
