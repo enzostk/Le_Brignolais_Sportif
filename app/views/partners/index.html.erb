@@ -1,26 +1,28 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Partners</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @partners.each do |partner| %>
-      <tr>
-        <td><%= partner.name %></td>
-        <td><%= partner.description %></td>
-        <td><a href="<%= partner.link_to %>"><%= image_tag partner.image_url, width: 100 %></a></td>
-        <td><%= link_to 'Show', partner %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-<br>
+<div class="container">
+	<div class="text-center">
+		<h2>Merci aux fidèles partenaires du Brignolais Sportif ! <br> Sans eux le projet n'aurait jamais existé !</h2>
+		<hr>
+		<br>
+	</div>
+	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+		<% @partners.each do |partner| %>
+		<div class="col">
+			<div class="card shadow-sm">
+				<a href="<%= partner.link_to %>"><%= image_tag partner.image_url, size: 30*10, class:"bd-placeholder-img card-img-top" %></a>
+				<div class="card-body">
+					<p class="card-text b">
+						<%= partner.description %>
+					</p>
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="btn-group">
+							<button type="button" class="btn btn-sm btn-outline-secondary">
+								<a href="<%= partner.link_to %>">👉 <%= partner.name %></a>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<% end %>
+	</div>
+</div>

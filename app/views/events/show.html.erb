@@ -16,7 +16,7 @@
 
   <%= render partial: "comments/comments", locals:{commented_on: @event} %>
 
-  <% if current_user && current_user.subscriber %>
+  <% if current_user && current_user.subscriber || current_user && current_user.admin %>
   <%= render partial: "comments/form", locals:{commented_on: @event} %>
   <%= link_to "Commenter", event_comments_path(@event, parent: nil) %>
   <% end %>

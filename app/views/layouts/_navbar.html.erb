@@ -16,7 +16,7 @@
         <%= link_to 'Dashboard', admin_root_path, class:"btn btn-nav me-2" %>
         <% end %>
 
-        <% if !current_user.subscriber %>
+        <% if !current_user.subscriber && !current_user.admin %>
         <%= link_to "S'abonner", pricing_index_path, class:"btn btn-nav me-2" %>
         <% end %>
 
