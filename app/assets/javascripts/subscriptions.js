@@ -1,4 +1,3 @@
-window.addEventListener("load", function() {
 const publicKey = document.querySelector("meta[name='stripe_key']").content;
 const stripe = Stripe(publicKey);
 
@@ -77,5 +76,3 @@ function addCardField(form, token, field) {
   hiddenInput.setAttribute('value', token.card[field]);
   form.appendChild(hiddenInput);
 }
-
-});
