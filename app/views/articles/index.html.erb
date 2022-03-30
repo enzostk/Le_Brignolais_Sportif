@@ -1,16 +1,18 @@
- <%# Navbar administrateur  %> 
- <%#  la notice est commune à toute les pages   %> 
+<%# Navbar administrateur  %> 
+<%#  la notice est commune à toute les pages   %> 
 <div class="container">
    <div class="row">
+
       <!-- Blog entries-->
+
       <p id="notice"><%= notice %></p>
       <h1>Articles</h1>
       <div class="col-lg-8">
+      
          <!-- Featured blog post-->
-             
-   
+
          <div class="card mb-4">
-         <% @articles.each do |article| %>
+            <% @articles.each do |article| %>
             <a href="#!"><%= image_tag article.image_url, class:"card-img-top" %></a>
             <div class="card-body">
                <div class="small text-muted b">January 1, 2022</div>
@@ -18,9 +20,57 @@
                <p class="card-text b"><%= article.content %></p>
                <a><%= link_to "Lire →", article, class:"btn btn-primary" %></a>
             </div>
-            
             <% end %>
+            <!-- End of the loop -->
          </div>
       </div>
+      <div class="col-lg-4">
+
+         <!-- Search widget-->
+
+         <div class="card mb-4">
+            <div class="card-header b">Search</div>
+            <div class="card-body">
+               <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
+                  <button class="btn btn-primary" id="button-search" type="button">Go!</button>
+               </div>
+            </div>
+         </div>
+
+         <!-- Categories widget-->
+
+         <div class="card mb-4">
+            <div class="card-header b">Categories</div>
+            <div class="card-body">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <ul class="list-unstyled mb-0">
+                        <li><a href="#!">Les seniors du Carami</a></li>
+                        <li><a href="#!">George Clooney en bikini</a></li>
+                        <li><a href="#!">Des gargouillis toute la nuit</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-sm-6">
+                     <ul class="list-unstyled mb-0">
+                        <li><a href="#!">Enzo a perdu son parapluie</a></li>
+                        <li><a href="#!">Avec le CSS fini l'ennui</a></li>
+                        <li><a href="#!">Quel glitch nous attends aujourd'hui</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Side widget-->
+
+         <div class="card mb-4">
+            <div class="card-header b">Side Widget</div>
+            <div class="card-body b">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+         </div>
+         <!-- Partners display-->
+      </div>
    </div>
+</div>
+</div>
 </div>
