@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     root to: "users#index"
   end
 
+
   root to: "articles#index"
 
   devise_for :users
