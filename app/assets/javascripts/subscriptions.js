@@ -1,4 +1,4 @@
-window.addEventListener("load", function() {
+window.addEventListener("load", function(){
 const publicKey = document.querySelector("meta[name='stripe_key']").content;
 const stripe = Stripe(publicKey);
 
