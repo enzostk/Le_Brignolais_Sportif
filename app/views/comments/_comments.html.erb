@@ -1,19 +1,25 @@
-  <h3>Commentaires</h3>
-  <% commented_on.comments.each do |comment| %>
+<h3>Commentaires</h3>
+<% commented_on.comments.where(parent_id: nil).each do |comment| %>
   <div class="well">
     <p><%= comment.content %></p>
     <small>de&nbsp<%= comment.user.email %></small>
 
+    <% if current_user && current_user.subscriber %>
     <a href="#" class="btn btn-primary comment-form-display">Répondre</a>
     <div class="comment-form">
       <%= render partial: 'comments/form', locals: { commented_on: @article || @event || @album, parent: comment } %>
     </div>
+    <% end %>
+
     <div class="subcomment">
-      <%= comment.comments.order(id: :desc) %>
+      <% comment.comments.each do |c| %>
+      <p><%= c.content %></p>
+      <% end %>
     </div>
   </div>
 <% end %>
 
+<!-- to display comment form on click -->
 <script>
   document.querySelectorAll('.comment-form-display').forEach((el) => {
     el.addEventListener('click', (ev) => {
@@ -22,4 +28,3 @@
     })
   })
 </script>
-
