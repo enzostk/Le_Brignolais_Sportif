@@ -6,70 +6,112 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Partner.destroy_all
+Article.destroy_all
 
-partner = Partner.create!(
-  name: "Miroiterie Brignolaise",
-  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
-  link_to: "https://www.miroiterie-brignolaise.com/",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000112-112e7112e9/450/Grand%20-%20Miroiterie%20Brignolaise.png?ph=35f5dda702"
+article = Article.create!(
+  title: "⭐ Les affiches du week-end ⭐",
+  category: "AS Brignoles",
+  content: "Chers Supporteurs,
+  Ce n'est pas une mais deux manifestations que nous avons souhaité mettre en avant pour le week-end à venir.
+  Ce samedi matin, notre association aura le plaisir d'accueillir un plateau Débutant dédié à nos catégories Féminines U6/U8 et U9/U11. Ce sont 14 équipes équipes représentant 10 clubs qui seront accueillies à Salvatori. Un superbe moment de football.
+  Le dimanche, nos U15 D1 auront fort à faire en recevant ni plus ni moins que le leader de leur championnat, la formation de Cuers / Pierrefeu. Mais nos troupes ont démontré une capacité à élever leur niveau de jeu dans ce type de rdv. Une belle rencontre en perspective. 
+  Dans les deux cas, nul doute que votre soutien aura tout son rôle. Nous vous attendons nombreux autour du terrain 😉.",
+  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/277176086_504148694696189_833991477022527802_n.png?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=H-Thfk53YJ4AX-UjfH6&_nc_ht=scontent-mrs2-2.xx&oh=00_AT8KimFKuZnjd4RsdO1DGi6HONghUKghSey2QlwkytgXiA&oe=624AB7B4"
 );
 
-partner = Partner.create!(
-  name: "Aviva",
-  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
-  link_to: "https://agences.aviva.fr/brignoles/",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000110-66cfb66cfd/450/Moyen%20-%20Aviva.png?ph=35f5dda702"
+article = Article.create!(
+  title: "🏓 Les résultats du week-end du tennis de table brignolais :",
+  category: "Ping-pong",
+  content: " ❌ Défaite de l'équipe Jeune Vs Fréjus, avec beaucoup de matches accrochés qui laissent de bonnes perspectives pour cette équipe créée il y a moins d'une demi-saison (20-10),
+  ✅ Victoire de l'équipe Régionale 2 Vs Sorgues (12-2),",
+  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/275007861_257549939914538_5954335758012002561_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=9nI9Nl0BgrcAX86Xp_b&_nc_ht=scontent-mrs2-2.xx&oh=00_AT84idh9j4cN47wrDhvzqmCptjZEyKzT4e4X2SYrymOboQ&oe=624B5730"
 );
 
-partner = Partner.create!(
-  name: "Elixir Coiffure",
-  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
-  link_to: "https://www.facebook.com/librairielebateaublanc/",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000141-4099b4099c/450/Moyen%20-%20Elixir%20-%20Copie-4.jpg?ph=35f5dda702"
+article = Article.create!(
+  title: "🏉 Juniors du RAS Provence Verte (Brignoles Provence XV + RSMXV) contre CARF du Golfe 🏉",
+  category: "Rugby",
+  content: "Voici l'album photo de la belle victoire des Juniors du RAS Provence Verte (Brignoles Provence XV + RSMXV) contre CARF du Golfe, dans un vent frigorifique en ce samedi après-midi ! Score 18-7 ! 💪 (clique sur l'appareil photo)",
+  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/275436431_260403476295851_7407448428083430559_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=6t7G-u1Dzk0AX_hypIL&_nc_ht=scontent-mrs2-2.xx&oh=00_AT_IrFPh5w937CDo0Yphn48jqu4mdBpK_nxh8Kk1DMPegA&oe=624B135F"
 );
 
-partner = Partner.create!(
-  name: "Le Bateau Blanc",
-  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
-  link_to: "https://www.facebook.com/groups/358933790814543",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000139-d6444d6446/450/Sans%20titre.png?ph=35f5dda702"
+article = Article.create!(
+  title: "🏐 Seniors Mixte du Volley Ball Brignoles 🏐",
+  category: "Volleyball",
+  content: "🏐 Le match en photos des seniors de ce lundi soir au gymnase du Vabre :
+   (clique sur l'appareil photo)",
+  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/275872314_261946202808245_4769172775278010298_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=5V-r6N_zrhEAX8-kwuO&_nc_ht=scontent-mrs2-2.xx&oh=00_AT9CgqWTOFCNQ0JlXjIbZVgoHzIT0tJuWY9Z0EIcjuOK4A&oe=62499194"
 );
 
-partner = Partner.create!(
-  name: "O four",
-  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
-  link_to: "https://www.facebook.com/O-four-105055051775418",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000155-f220cf220e/450/Moyen%20-%20O%20Four-2.jpg?ph=35f5dda702"
+article = Article.create!(
+  title: "Ce week-end sur la ville de Brignoles",
+  category: "Badminton",
+  content: "- Championnats du Var Jeunes et Vétérans sur toute la journée au gymnase Jean Moulin.",
+  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/276090166_268769098792622_4451485360145238520_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=un_L-dR0xuQAX-a6ceh&_nc_ht=scontent-mrs2-2.xx&oh=00_AT_ocDUFsgxQputA9fvSdsp5QQB46w8BBmlQKVkbOxbvaA&oe=624A3469"
 );
 
-partner = Partner.create!(
-  name: "Le Croque Bedaine",
-  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
-  link_to: "https://www.facebook.com/le.croque.bedaine.brignoles",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000300-eac4deac4f/450/Moyen%20-%20Le%20Croque%20Bedaine.jpg?ph=35f5dda702"
-);
 
-partner = Partner.create!(
-  name: "Allo Taxi Romain",
-  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
-  link_to: "https://www.allo-taxi-romain.fr/transport",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000301-c517dc5180/450/Moyen%20-%20Allo%20Taxi%20Romain.jpg?ph=35f5dda702"
-);
+# partner = Partner.create!(
+#   name: "Miroiterie Brignolaise",
+#   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+#   link_to: "https://www.miroiterie-brignolaise.com/",
+#   image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000112-112e7112e9/450/Grand%20-%20Miroiterie%20Brignolaise.png?ph=35f5dda702"
+# );
 
-partner = Partner.create!(
-  name: "Un jour un Ange",
-  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
-  link_to: "https://fleuristes-et-fleurs.com/fleuriste/un-jour-un-ange-brignoles-83170",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000111-576a5576a6/450/Petit%20-%20Un%20jour%20un%20ange.png?ph=35f5dda702"
-);
+# partner = Partner.create!(
+#   name: "Aviva",
+#   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+#   link_to: "https://agences.aviva.fr/brignoles/",
+#   image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000110-66cfb66cfd/450/Moyen%20-%20Aviva.png?ph=35f5dda702"
+# );
 
-partner = Partner.create!(
-  name: "Hema Services",
-  description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
-  link_to: "https://www.hemaservices.fr/",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000150-d6815d6817/450/Petit%20-%20Hema%20Services.jpg?ph=35f5dda702"
-);
+# partner = Partner.create!(
+#   name: "Elixir Coiffure",
+#   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+#   link_to: "https://www.facebook.com/librairielebateaublanc/",
+#   image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000141-4099b4099c/450/Moyen%20-%20Elixir%20-%20Copie-4.jpg?ph=35f5dda702"
+# );
+
+# partner = Partner.create!(
+#   name: "Le Bateau Blanc",
+#   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+#   link_to: "https://www.facebook.com/groups/358933790814543",
+#   image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000139-d6444d6446/450/Sans%20titre.png?ph=35f5dda702"
+# );
+
+# partner = Partner.create!(
+#   name: "O four",
+#   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+#   link_to: "https://www.facebook.com/O-four-105055051775418",
+#   image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000155-f220cf220e/450/Moyen%20-%20O%20Four-2.jpg?ph=35f5dda702"
+# );
+
+# partner = Partner.create!(
+#   name: "Le Croque Bedaine",
+#   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+#   link_to: "https://www.facebook.com/le.croque.bedaine.brignoles",
+#   image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000300-eac4deac4f/450/Moyen%20-%20Le%20Croque%20Bedaine.jpg?ph=35f5dda702"
+# );
+
+# partner = Partner.create!(
+#   name: "Allo Taxi Romain",
+#   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+#   link_to: "https://www.allo-taxi-romain.fr/transport",
+#   image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000301-c517dc5180/450/Moyen%20-%20Allo%20Taxi%20Romain.jpg?ph=35f5dda702"
+# );
+
+# partner = Partner.create!(
+#   name: "Un jour un Ange",
+#   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+#   link_to: "https://fleuristes-et-fleurs.com/fleuriste/un-jour-un-ange-brignoles-83170",
+#   image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000111-576a5576a6/450/Petit%20-%20Un%20jour%20un%20ange.png?ph=35f5dda702"
+# );
+
+# partner = Partner.create!(
+#   name: "Hema Services",
+#   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
+#   link_to: "https://www.hemaservices.fr/",
+#   image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000150-d6815d6817/450/Petit%20-%20Hema%20Services.jpg?ph=35f5dda702"
+# );
 
 
 # club = Club.create!(
