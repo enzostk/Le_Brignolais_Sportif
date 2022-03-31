@@ -34,8 +34,13 @@
                     <div class="home__data">
                         <h1 class="home__title">Le Brignolais<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sportif</h1>
                         <p class="home__description">Le Brignolais Sportif,c'est le journal bimestriel des associations sportives brignolaises.<br>
-                            Un journal d'environ 40 pages totalement gratuit !</p>
-                        <a href="<%= pricing_index_path %>" class="home__button n">👉 Abonne-toi ici!</a> <a href="<%= articles_path %>" class="home__button n">Continuer ➲</a>
+                          Un journal d'environ 40 pages totalement gratuit !</p>
+                          <%  if user_signed_in? && current_user.subscriber %>
+                            <a href="<%= articles_path %>" class="home__button n">Continuer sur le site ➲</a>
+                          <% else %>
+                              <a href="<%= pricing_index_path %>" class="home__button n">👉 Abonne-toi ici!</a> 
+                              <a href="<%= articles_path %>" class="home__button n">Continuer ➲</a>
+                          <% end %>
                     </div>
                 </div>
             </section>
