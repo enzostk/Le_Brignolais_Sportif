@@ -1,4 +1,47 @@
-<h1>Home#index</h1>
-<p>
-  <%= link_to 'Se connecter', new_user_session_path%>
-</p>
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <h1 class="nav__logo">Le Brignolais Sportif</h1>
+                </div>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="<%= articles_path %>" class="nav__link active n">Actualités</a></li>
+                        <li class="nav__item"><a href="<%= events_path %>" class="nav__link n">Agenda</a></li>
+                        <li class="nav__item"><a href="<%= partners_path %>" class="nav__link n">Partenaires</a></li>
+                        <li class="nav__item"><a href="<%= contact_path %>" class="nav__link n">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <div class="home__img">
+                        <img src="https://i.imgur.com/A7QMA2I.png" alt="" data-speed="-2" class="move">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Le Brignolais<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sportif</h1>
+                        <p class="home__description">Le Brignolais Sportif,c'est le journal bimestriel des associations sportives brignolaises.<br>
+                          Un journal d'environ 40 pages totalement gratuit !</p>
+                          <%  if user_signed_in? && current_user.subscriber %>
+                            <a href="<%= articles_path %>" class="home__button n">Continuer sur le site ➲</a>
+                          <% else %>
+                              <a href="<%= pricing_index_path %>" class="home__button n">👉 Abonne-toi ici!</a> 
+                              <a href="<%= articles_path %>" class="home__button n">Continuer ➲</a>
+                          <% end %>
+                    </div>
+                </div>
+            </section>
+        </main>

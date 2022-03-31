@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     resources :users
     resources :albums
     resources :articles
+    resources :comments
     resources :clubs
     resources :events
     resources :partners
@@ -10,9 +11,7 @@ Rails.application.routes.draw do
     root to: "users#index"
   end
 
-
-  root to: "articles#index"
-
+  root to: "home#index"
   get '/contact', to: 'home#contact'
   devise_for :users
   resources :events, only: [:index, :show] do
