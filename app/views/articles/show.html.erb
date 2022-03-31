@@ -18,12 +18,11 @@
   <p>
     <%= @article.content %>
   </p>
-
+  
   <%= render partial: "comments/comments", locals: {commented_on: @article, parent: nil} %>
   <% if current_user && current_user.subscriber %>
-  <%= render partial: "comments/form", locals: {commented_on: @article, parent: nil} %>
-  <%= link_to "Commenter", new_article_comment_path(@article) %>
+    <%= render partial: "comments/form", locals: {commented_on: @article, parent: nil} %>
   <% end %>
 
-  <%= link_to "Retour", articles_path %>
+  <%= button_to "Retour à l'accueil", articles_path, class:"btn btn-light" %>
 </div>
