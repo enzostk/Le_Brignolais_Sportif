@@ -11,15 +11,13 @@
       
          <% @articles.each do |article| %>
          <div class="card mb-4">
-              
                 <%= image_tag article.image_url, class:"card-img-top" %>
-            
                <div class="card-body">
                   <div class="small text-muted b"><%= article.created_at %></div>
                   <h2 class="card-title b"><%= article.title.html_safe %></h2>
                   <p class="card-text b"><%= article.content.html_safe %></p>
                   <a><%= link_to "Lire l'article →", article, class:"btn btn-primary" %></a>
-            </div>
+               </div>
             <br>
             <!-- End of the loop -->
          </div>

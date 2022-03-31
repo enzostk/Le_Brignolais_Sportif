@@ -6,3 +6,6 @@
   display: none;
 }
 
+.card-comment {
+  background-color: transparent!important;
+}
