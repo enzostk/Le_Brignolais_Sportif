@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     resources :users
     resources :albums
     resources :articles
+    resources :comments
     resources :clubs
     resources :events
     resources :partners
