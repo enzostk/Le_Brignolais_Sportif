@@ -6,7 +6,7 @@
     <br/>
     <small>
       de&nbsp
-      <%= comment.user.email %>
+      <%= comment.user.name %>
     </small>
   </p>
   <% if current_user && current_user.subscriber %>
@@ -22,7 +22,7 @@
       <br/>
       <small>
         de&nbsp
-        <%= c1.user.email %>
+        <%= c1.user.name %>
       </small>
     </p>
     <% if current_user && current_user.subscriber %>
@@ -38,7 +38,7 @@
         <br/>
         <small>
           de&nbsp
-          <%= c2.user.email %>
+          <%= c2.user.name %>
         </small>
       </p>
       <%end %>
