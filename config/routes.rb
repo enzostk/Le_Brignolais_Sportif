@@ -31,4 +31,5 @@ Rails.application.routes.draw do
   resources :partners, only: [:index, :show]
   resources :clubs, only: [:index, :show]
   resources :results, only: [:index, :show]
+  resources :newsletters
 end
