@@ -14,17 +14,17 @@
       </div>
 
       <ul class="nav__list">
-        <li class="nav__item"><a href="<%= articles_path %>" class="nav__link active n">Actualités</a></li>
-        <li class="nav__item"><a href="<%= events_path %>" class="nav__link n">Agenda</a></li>
-        <li class="nav__item"><a href="<%= partners_path %>" class="nav__link n">Partenaires</a></li>
-        <li class="nav__item"><a href="<%= contact_path %>" class="nav__link n">Contact</a></li>
+        <li class="nav__item"><%= link_to "Actualités" , articles_path , class:"nav__link active n" %></li>
+        <li class="nav__item"><%= link_to "Agenda" , events_path, class:"nav__link active n" %></li>
+        <li class="nav__item"><%= link_to "Partenaires" , partners_path, class:"nav__link active n" %></li>
+        <li class="nav__item"><%= link_to "Contact" , contact_path, class:"nav__link active n" %></li>
       </ul>
+
     </div>
   </nav>
 </header>
 
 <main class="l-main">
-<!--===== HOME =====-->
   <section class="home" id="home">
     <div class="home__container bd-grid">
       <div class="home__img move">

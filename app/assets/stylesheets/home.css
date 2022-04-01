@@ -117,10 +117,15 @@ img{
 
 .nav__item{
   margin-bottom: 2rem;
+  text-decoration:none!important; 
 }
 
 .nav__close, .nav__link, .nav__logo, .nav__toggle{
   color: var(--white-color);
+}
+
+.nav_link {
+  text-decoration:none!important; 
 }
 
 .nav__link:hover{
