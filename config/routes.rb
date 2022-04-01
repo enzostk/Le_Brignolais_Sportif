@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   root to: "home#index"
   get '/contact', to: 'home#contact'
+  get '/journal', to: 'home#journal'
   devise_for :users
   resources :events, only: [:index, :show] do
     resources :comments, module: :events
