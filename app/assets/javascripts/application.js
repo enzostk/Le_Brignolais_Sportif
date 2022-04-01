@@ -53,6 +53,7 @@ else
 // function allowing to call a button on click to reach the top screen without scroll
 
 jQuery(function(){
+
     $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 200 ) {
@@ -64,3 +65,4 @@ jQuery(function(){
         });
     });
 });
+

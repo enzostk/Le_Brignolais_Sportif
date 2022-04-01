@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   end
 
   root to: "home#index"
+  get '/journal', to: 'home#journal'
   get '/contact', to: 'home#contact'
   get '/journal', to: 'home#journal'
   devise_for :users
@@ -32,4 +33,5 @@ Rails.application.routes.draw do
   resources :partners, only: [:index, :show]
   resources :clubs, only: [:index, :show]
   resources :results, only: [:index, :show]
+  resources :newsletters
 end

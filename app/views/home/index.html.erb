@@ -27,19 +27,25 @@
             <!--===== HOME =====-->
             <section class="home" id="home">
                 <div class="home__container bd-grid">
-                    <div class="home__img">
-                        <img src="https://i.imgur.com/A7QMA2I.png" alt="" data-speed="-2" class="move">
+                    <div class="home__img move">
+                         <%= image_tag("contacts/brignolais_transparent.png") %>  
                     </div>
 
                     <div class="home__data">
                         <h1 class="home__title">Le Brignolais<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sportif</h1>
-                        <p class="home__description">Le Brignolais Sportif,c'est le journal bimestriel des associations sportives brignolaises.<br>
-                          Un journal d'environ 40 pages totalement gratuit !</p>
+                        <p class="home__description">Le Brignolais Sportif, c'est le journal bimestriel des associations sportives brignolaises.<br>
+                          Un journal d'environ 40 pages totalement gratuit !<br><br>
+                          Au travers de notre site, vous trouverez tout ce qui est relatif à la vie sportive brignolaise ;<br>
+                          les actualités et les évènements à venir, l'édition numérique du journal, les résultats des clubs .. <br>
+                          <br>
+                          N'hésitez pas à vous abonner si vous souhaitez nous soutenir <br>
+                          et échanger avec les membres de la communauté !
+                          </p>
                           <%  if user_signed_in? && current_user.subscriber %>
                             <a href="<%= articles_path %>" class="home__button n">Continuer sur le site ➲</a>
                           <% else %>
-                              <a href="<%= pricing_index_path %>" class="home__button n">👉 Abonne-toi ici!</a> 
-                              <a href="<%= articles_path %>" class="home__button n">Continuer ➲</a>
+                            <a href="<%= pricing_index_path %>" class="home__button n">👉 Abonne-toi ici!</a> 
+                            <a href="<%= articles_path %>" class="home__button n">Continuer ➲</a>
                           <% end %>
                     </div>
                 </div>
