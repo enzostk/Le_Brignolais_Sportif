@@ -8,7 +8,6 @@ Rails.application.routes.draw do
     resources :events
     resources :partners
     resources :results
-    resources :newsletters
     root to: "users#index"
   end
 
@@ -32,4 +31,5 @@ Rails.application.routes.draw do
   resources :partners, only: [:index, :show]
   resources :clubs, only: [:index, :show]
   resources :results, only: [:index, :show]
+  resources :newsletters
 end
