@@ -6,7 +6,6 @@
     <div class="card-header comment">
       <%= comment.user.name %> le <%= comment.created_at.strftime("%d-%m-%Y") %>
     </div>
-
     <div class="card-body">
       <p class="comment"><%= comment.content %></p>
     </div>
@@ -62,8 +61,6 @@
     el.addEventListener('click', (ev) => {
       ev.preventDefault();
       el.nextElementSibling.style = 'display: block;';
-    }
-    )
-  }
-  );
+    })
+  });
 </script>
