@@ -1,16 +1,16 @@
 <%# Navbar administrateur  %> 
-<%#  la notice est commune à toute les pages   %> 
+<%#  the id notice is shared among all pages   %> 
 <div class="container">
    <div class="row">
 
       <!-- Blog entries-->
 
       <p id="notice"><%= notice %></p>
-      <h1>Articles</h1>
-      <div class="col-lg-8">
+      <h1 data-title="articles" data-aos="fade-up" data-aos-id="super-duper"> Articles</h1>
+      <div class="col-lg-8 box">
       
          <% @articles.each do |article| %>
-         <div class="card mb-4">
+         <div class="card mb-4 img-box">
                  <%= image_tag article.image_url, size: 840*200 %>
                <div class="card-body">
                   <div class="small text-muted b"><%= article.created_at %></div>
