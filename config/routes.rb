@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   end
 
   root to: "home#index"
+  get '/journal', to: 'home#journal'
   get '/contact', to: 'home#contact'
   devise_for :users
   resources :events, only: [:index, :show] do
