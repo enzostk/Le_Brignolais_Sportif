@@ -2,12 +2,12 @@
   <p id="notice"><%= notice %></p>
 
   <p>
-    <strong>Titre :</strong>
+    <strong><u>Titre :</u></strong>
     <%= @article.title %>
   </p>
 
   <p>
-    <strong>Categorie :</strong>
+    <strong><u>Categorie :</u></strong>
     <%= @article.category %>
   </p>
 
@@ -23,6 +23,6 @@
   <% if current_user && current_user.subscriber %>
     <%= render partial: "comments/form", locals: {commented_on: @article, parent: nil} %>
   <% end %>
-
+  <br>
   <%= button_to "Retour à l'accueil", articles_path, class:"btn btn-light" %>
 </div>
