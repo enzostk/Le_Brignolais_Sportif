@@ -15,18 +15,19 @@
 //= require_tree .
 
 
-
+// ##################################
 
 // adding aos js library
 
 
-window.addEventListener("load",function()
-{
-    AOS.init();
+//window.addEventListener("load",function()
+//{
+    //AOS.init();
 
-}
-);
+//}
+//);
 
+// ##################################
 
 
 // adding sticky navbar
