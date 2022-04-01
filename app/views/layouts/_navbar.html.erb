@@ -23,10 +23,12 @@
         <%# Navbar utilisateur %>
 
         <%= link_to "Mon compte", edit_user_registration_path, class:"btn btn-nav me-2" %>
-        <%= link_to "Log-out", destroy_user_session_path , method: :delete, class:"btn btn-signup"%>
+        <%= link_to "Se déconnecter", destroy_user_session_path , method: :delete, class:"btn btn-signup"%>
+
       <%else%>
-        <%= link_to "Log-in", new_user_session_path , class:"btn btn-nav me-2"%>
-        <%= link_to "Sign-up", new_user_registration_path , class:"btn btn-signup"%>
+      
+        <%= link_to "Se connecter", new_user_session_path , class:"btn btn-nav me-2"%>
+        <%= link_to "S'inscrire'", new_user_registration_path , class:"btn btn-signup"%>
       <% end %>
 
       </div>

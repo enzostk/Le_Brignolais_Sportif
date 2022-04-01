@@ -27,8 +27,8 @@
             <!--===== HOME =====-->
             <section class="home" id="home">
                 <div class="home__container bd-grid">
-                    <div class="home__img">
-                        <img src="https://i.imgur.com/A7QMA2I.png" alt="" data-speed="-2" class="move">
+                    <div class="home__img move">
+                         <%= image_tag("contacts/brignolais_transparent.png") %>  
                     </div>
 
                     <div class="home__data">
@@ -44,8 +44,8 @@
                           <%  if user_signed_in? && current_user.subscriber %>
                             <a href="<%= articles_path %>" class="home__button n">Continuer sur le site ➲</a>
                           <% else %>
-                              <a href="<%= pricing_index_path %>" class="home__button n">👉 Abonne-toi ici!</a> 
-                              <a href="<%= articles_path %>" class="home__button n">Continuer ➲</a>
+                            <a href="<%= pricing_index_path %>" class="home__button n">👉 Abonne-toi ici!</a> 
+                            <a href="<%= articles_path %>" class="home__button n">Continuer ➲</a>
                           <% end %>
                     </div>
                 </div>
