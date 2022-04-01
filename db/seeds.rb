@@ -11,6 +11,7 @@ Album.destroy_all
 Article.destroy_all
 Partner.destroy_all
 Club.destroy_all
+Event.destroy_all
 
 event = Event.create!(
   title: "BlackSide",
@@ -20,21 +21,21 @@ event = Event.create!(
 )
 
 event = Event.create!(
-  title: "test",
-  category: "test",
+  title: "Programme du week-end au HCB",
+  category: "Handball",
   image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/276319100_460208299233827_8040392121839928326_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=m0U3aZiPiogAX-qz7iy&_nc_ht=scontent-mrs2-2.xx&oh=00_AT-yzOPy_pR7YqX-eS1cuP3-_etGnzXDX2Gf6l30R6nLRA&oe=624B3D91"
 )
 
 event = Event.create!(
-  title: "test",
-  category: "test",
-  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/276319100_460208299233827_8040392121839928326_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=m0U3aZiPiogAX-qz7iy&_nc_ht=scontent-mrs2-2.xx&oh=00_AT-yzOPy_pR7YqX-eS1cuP3-_etGnzXDX2Gf6l30R6nLRA&oe=624B3D91"
+  title: "Tirage quart de final aller - 2ème série",
+  category: "Rugby",
+  image_url: "https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/277002276_1032245934049183_4602230424838445673_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=a26aad&_nc_ohc=sdNnAif3ObYAX_qwS2C&tn=_8HpgVW1jtgPASvO&_nc_ht=scontent-mrs2-1.xx&oh=00_AT_Nahg91jmiZoYYeI4-NyxCBtOf8SDVKv-CLpce86zGHw&oe=624BF659"
 )
 
 event = Event.create!(
-  title: "test",
-  category: "test",
-  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/276319100_460208299233827_8040392121839928326_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=m0U3aZiPiogAX-qz7iy&_nc_ht=scontent-mrs2-2.xx&oh=00_AT-yzOPy_pR7YqX-eS1cuP3-_etGnzXDX2Gf6l30R6nLRA&oe=624B3D91"
+  title: "U13 Féminines Pré-Excellence",
+  category: "Football",
+  image_url: "https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/276014775_1677042979297365_1934884356271205509_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=SXqsAyNehnwAX8vtgGD&tn=_8HpgVW1jtgPASvO&_nc_ht=scontent-mrs2-1.xx&oh=00_AT-jOE24ByinzMuDPqEgsROuF9m45al0Zy-nn2iIFHTP4w&oe=624BEB90"
 )
 
 album = Album.create!(

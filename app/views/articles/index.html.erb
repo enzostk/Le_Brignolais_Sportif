@@ -15,8 +15,8 @@
                <div class="card-body">
                   <div class="small text-muted b"><%= article.created_at %></div>
                   <h2 class="card-title b"><%= article.title.html_safe %></h2>
-                  <p class="card-text b"><%= article.content.html_safe %></p>
-                  <a><%= link_to "Lire l'article →", article, class:"btn btn-primary" %></a>
+                  <p class="card-text b"><%=  truncate(article.content.html_safe, length:100) %></p>
+                  <a><%= link_to "Lire la suite →", article, class:"btn btn-primary" %></a>
                </div>
             <br>
             <!-- End of the loop -->
@@ -27,19 +27,21 @@
 
          <!-- Search widget-->
 
-         <div class="card mb-4">
-            <div class="card-header b">Search</div>
-            <div class="card-body">
-               <div class="input-group">
-                  <input class="form-control" type="text" placeholder="Enter search term..." aria-label="Enter search term..." aria-describedby="button-search" />
-                  <button class="btn btn-primary" id="button-search" type="button">Go!</button>
-               </div>
+         <div class="card border-light mb-4" style="max-width: 18rem;" >
+            <div class="card-header b">Dernières publications</div>
+           
+            <div class="card-body b">
+                <% @articles.each do |article| %>
+                <tr>
+                <td>	<a href="<%= article_path(article.id) %>"><%= article.title %> </td>
+                </tr><br><br>
+                <% end %>
             </div>
          </div>
 
          <!-- Categories widget-->
 
-         <div class="card mb-4">
+         <div class="card mb-4" style="max-width: 18rem;">
             <div class="card-header b">Categories</div>
             <div class="card-body">
                <div class="row">
@@ -63,9 +65,20 @@
 
          <!-- Side widget-->
 
-         <div class="card mb-4">
-            <div class="card-header b">Side Widget</div>
-            <div class="card-body b">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+         <div class="card mb-4" style="max-width: 18rem;">
+            <div class="card-body b">
+            <%= image_tag Partner.find(rand(55..60)).image_url, size: 100*50 %>
+            </div>
+         </div>
+         <div class="card mb-4" style="max-width: 18rem;">
+            <div class="card-body b">
+            <%= image_tag Partner.find(rand(55..60)).image_url, size: 100*50 %>
+            </div>
+         </div>
+         <div class="card mb-4" style="max-width: 18rem;">
+            <div class="card-body b">
+            <%= image_tag Partner.find(rand(55..60)).image_url, size: 100*50 %>
+            </div>
          </div>
          <!-- Partners display-->
       </div>
