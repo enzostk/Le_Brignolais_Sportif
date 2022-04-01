@@ -68,3 +68,5 @@ gem "devise"
 gem "stripe"
 gem "validate_url"
 gem 'administrate', '~> 0.17.0'
+gem 'whenever', require: false
+gem 'capistrano-ext'
