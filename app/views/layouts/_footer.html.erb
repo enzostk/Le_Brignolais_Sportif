@@ -4,20 +4,25 @@
         <div class="col-12 col-lg-2 offset-lg-1 mb-3 mt-lg-4">
             <h5><a class="footerlink" href="#">Ils parlent de nous</a></h5>
           </div>
-        <div class="col-6 col-lg-2 offset-lg-1 mb-3 ">
+
+    <div class="col-6 col-lg-2 offset-lg-1 mb-3 ">
           <h5>Team</h5>
           <ul class="list-unstyled ">
-            <li><i class="fab fa-github icon text-danger"></i><a class="footerlink" href="https://github.com/LoisKOUNINEF">Loïs Kouninef</a>
+            <li>
+              <i class="fab fa-github icon text-danger"></i>
+              <%= link_to "Loïs Kouninef", "https://github.com/LoisKOUNINEF", class:"footerlink" %>
             </li>
-            <li><i class="fas fa-tombstone-alt"></i><a class="footerlink" href="https://github.com/Samuelkhalifa">🪦Samuel Khalifa</a>
-            </li>
-            <li><i class="fab fa-github icon text-danger"></i><a class="footerlink" href="https://github.com/enzostk">Enzo Bonnet</a>
-            </li>
-            <li><i class="fab fa-github icon text-danger"></i><a class="footerlink" href="https://github.com/Teacher-droid">Damian Pierre</a>
-            </li>
+            <li>
+              <i class="fab fa-github icon text-danger"></i>
+              <%= link_to "Damian Pierre", "https://github.com/Teacher-droid", class:"footerlink" %>
+            <li>
+              <i class="fab fa-github icon text-danger"></i>
+              <%= link_to "Enzo Bonnet", "https://github.com/enzostk", class:"footerlink" %>
+            <li>
+              <i class="fas fa-tombstone-alt"></i>
+              <%= link_to "🪦Samuel Khalifa ❓", "https://github.com/Samuelkhalifa", class:"footerlink" %>
           </ul>
         </div>
-
 
 
         <div class="col-6 col-lg-2 mb-3">
@@ -34,7 +39,7 @@
         
         <div class="col-1 col-lg-2  col-sm-5 col-xs-5 mb-3 icons-wrapper">
         <ul class="social-links icon-content list-unstyled">
-          <li><img src="https://i.imgur.com/6adz7vV.png" alt="logo"  width="70" height="70" ></li>
+          <li><%= link_to image_tag('icone/footer-lbs.png'), root_path %></li>
           	<a href="https://www.facebook.com/profile.php?id=100069786000800"><i class="fab fa-facebook-f"></i></a>
   	 				<a href="https://twitter.com/lbs83170"><i class="fab fa-twitter"></i></a>
   	 				<a href="#"><i class="fab fa-instagram"></i></a>
