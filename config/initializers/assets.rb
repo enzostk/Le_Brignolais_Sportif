@@ -13,5 +13,9 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 Rails.application.config.assets.precompile += %w( subscriptions.js )
+# Add additional assets to the asset load path.
 Rails.application.config.assets.precompile += %w( home.js )
+# Add additional assets to the asset load path.
 Rails.application.config.assets.precompile += %w( home.css )
+# Add additional assets to the asset load path.
+Rails.application.config.assets.precompile += %w( aos.js )
