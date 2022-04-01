@@ -8,4 +8,8 @@ class HomeController < ApplicationController
     render layout: "application"
   end
 
+  def journal
+    render layout: "application"
+  end
+  
 end
