@@ -77,7 +77,7 @@ album = Album.create!(
   title: "🏸 CSB Volley Seniors - 14 mars 2022",
   category: "Volleyball",
   link_to: "https://photos.google.com/share/AF1QipP3nmmoMDlXavSGZGl18EB2EHXdllw242agHpsQccWhOwNJbad-XRKfMm2GooWPBQ?key=RDhQNjU3cnVGNHFoMmR5VHRndktVVU93cF9Uandn",
-  image_url: "https://zupimages.net/up/22/13/va0p.jpg"
+  image_url: "https://zupimages.net/up/22/13/p5d5.jpg"
 );
 
 article = Article.create!(
@@ -218,7 +218,7 @@ club = Club.create!(
   name: "Club Alpin Brignoles",
   category: "Club Alpin",
   link_to: "https://brignoles.ffcam.fr/",
-  image_url: "https://zupimages.net/up/22/13/mw6j.png"
+  image_url: "https://zupimages.net/up/22/13/04vy.png"
 );
 
 club = Club.create!(

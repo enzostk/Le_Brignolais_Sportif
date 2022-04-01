@@ -5,8 +5,9 @@
 
       <!-- Blog entries-->
 
-      <p id="notice"><%= notice %></p>
-      <h1>Articles</h1>
+      <div class="text-center">
+         <h1>Retrouvez tous les articles du moment</h1><br> 
+      </div>   
       <div class="col-lg-8">
       
          <% @articles.each do |article| %>
@@ -23,45 +24,21 @@
          </div>
          <% end %>
       </div>
-      <div class="col-lg-4">
 
-         <!-- Search widget-->
+         <!-- Latests articles -->
 
-         <div class="card border-light mb-4" style="max-width: 18rem;" >
-            <div class="card-header b">Dernières publications</div>
-           
-            <div class="card-body b">
-                <% @articles.each do |article| %>
-                <tr>
-                <td>	<a href="<%= article_path(article.id) %>"><%= article.title %> </td>
-                </tr><br><br>
-                <% end %>
-            </div>
-         </div>
+         <div class="col-lg-4">
+            <div class="card border-light mb-4" style="max-width: 18rem;" >
+               <div class="card-header b">Dernières publications</div>
 
-         <!-- Categories widget-->
-
-         <div class="card mb-4" style="max-width: 18rem;">
-            <div class="card-header b">Categories</div>
-            <div class="card-body">
-               <div class="row">
-                  <div class="col-sm-6">
-                     <ul class="list-unstyled mb-0">
-                        <li><a href="#!">Les seniors du Carami</a></li>
-                        <li><a href="#!">George Clooney en bikini</a></li>
-                        <li><a href="#!">Des gargouillis toute la nuit</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-sm-6">
-                     <ul class="list-unstyled mb-0">
-                        <li><a href="#!">Enzo a perdu son parapluie</a></li>
-                        <li><a href="#!">Avec le CSS fini l'ennui</a></li>
-                        <li><a href="#!">Quel glitch nous attends aujourd'hui</a></li>
-                     </ul>
-                  </div>
+               <div class="card-body b">
+                   <% @articles.each do |article| %>
+                   <tr>
+                   <td>	<a href="<%= article_path(article.id) %>"><%= article.title %> </td>
+                   </tr><br><br>
+                   <% end %>
                </div>
             </div>
-         </div>
 
          <!-- Side widget-->
 

@@ -39,49 +39,46 @@
         }
       }
     </style>
-
-    
-    <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
- <div class="container marketing">
-    <br>
-    <!-- Three columns of text below the carousel -->
-    <div class="row ">
-      <div class="col-lg-4">
-        <a href="https://www.facebook.com/profile.php?id=100069786000800"><img src="https://zupimages.net/up/22/13/zy8y.png" alt="logo"  width="150" height="150" alt="Facebook"/></a>     
-        <h2>LeBrignolais Sportif</h2>
-      </div>
-      
-      <div class="col-lg-4">
-        <a href="https://www.instagram.com/lebrignolaissportif/"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt="logo"  width="150" height="150" alt="Instagram"/></a>   
-        <h2>lebrignolaissportif</h2>
-      </div>
-      <div class="col-lg-4">
-        <img src="https://zupimages.net/up/22/13/c8jx.png" alt="logo"  width="175" height="150" alt="Instagram"/>
-        <h2>lebrignolaissportif<br>@gmail.com</h2>
-      </div>
-    </div>
-    <br>
+  <div class="container marketing">
+     <br>
+     <!-- Three columns of text below the carousel -->
+      <div class="row ">
+        <div class="col-lg-4">
+         <%= link_to image_tag("contacts/facebook.png"), "https://www.facebook.com/profile.php?id=100069786000800" %>
+         <h2>LeBrignolais Sportif</h2>
+       </div>
 
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading"> N'oubliez pas de vous abonner. 🏆</h2>
-        <p class="lead">Le Brignolais Sportif reste 100% gratuit et cela ne changera pas!<br>
-        Tout l'accès à l'information sportive des associations de la ville ainsi que toutes les photos présentées sur ce site restent visibles gratuitement ! <br>
-        Cela dit, vous avez la possibilité de vous abonner afin de nous soutenir en &nbsp;&nbsp;<a><%= link_to "⟶ cliquant ici ⟵", pricing_index_path %> !</a>
+       <div class="col-lg-4">
+         <%= link_to image_tag("contacts/instagram.png"), "https://www.instagram.com/lebrignolaissportif/" %>   
+         <h2>lebrignolaissportif</h2>
+       </div>
+        <div class="col-lg-4">
+          <%= image_tag("contacts/gmail.png") %>   
+         <h2>lebrignolaissportif<br>@gmail.com</h2>
+       </div>
       </div>
-      <div class="col-md-5">
-        <img src="https://zupimages.net/up/22/13/nwfy.png" alt="logo"  width="500" height="300" >
-      </div>
-    </div>
-    <hr class="featurette-divider">
-  </div>
+      <br>
 
-      <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading"> N'oubliez pas de vous abonner. 🏆</h2>
+          <p class="lead">Le Brignolais Sportif reste 100% gratuit et cela ne changera pas!<br>
+          Tout l'accès à l'information sportive des associations de la ville ainsi que toutes les photos présentées sur ce site restent visibles gratuitement ! <br>
+          Cela dit, vous avez la possibilité de vous abonner afin de nous soutenir en &nbsp;&nbsp;<a><%= link_to "⟶ cliquant ici ⟵", pricing_index_path %> !</a>
+        </div>
+       <div class="col-md-5">
+         <%= image_tag("contacts/brignolais_transparent.png") %>   
+       </div>
+     </div>
+     <hr class="featurette-divider">
+   </div>
+
+    <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>
