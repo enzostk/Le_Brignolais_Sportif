@@ -1,5 +1,4 @@
 class NewslettersController < ApplicationController
-  skip_before_action :authenticate_user!
   before_action :set_newsletter, only: [:destroy]
 
   def create
