@@ -8,7 +8,7 @@
 		<% @partners.each do |partner| %>
 		<div class="col">
 			<div class="card shadow-sm">
-				<a href="<%= partner.link_to %>"><%= image_tag partner.image_url, size: 200*100 %></a>
+				<%= partner.link_to %>"><%= image_tag partner.image_url, size: 200*100 %>
 				<div class="card-body">
 					<p class="card-text b">
 						<%= partner.description %>
@@ -16,7 +16,7 @@
 					<div class="d-flex justify-content-between align-items-center">
 						<div class="btn-group">
 							<button type="button" class="btn btn-sm btn-outline-secondary">
-								<a href="<%= partner.link_to %>">👉 <%= partner.name %></a>
+								<%= partner.link_to %>">👉 <%= partner.name %>
 							</button>
 						</div>
 					</div>
