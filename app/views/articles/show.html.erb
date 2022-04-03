@@ -15,7 +15,7 @@
   </p>
 
   <p>
-    <%= @article.content %>
+    <br/><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= @article.content %></strong><br/><br/>
   </p>
   
   <%= render partial: "comments/comments", locals: {commented_on: @article, parent: nil} %>
