@@ -16,13 +16,13 @@
 
   <p>
     <strong>Voir l'album :</strong>
-    <%= @album.link_to %>
+    <%= link_to "👉 Album photo", @album.link_to %>
   </p>
 
   <%= render partial: "comments/comments", locals: {commented_on: @album, parent: nil} %>
   <% if current_user && current_user.subscriber || current_user && current_user.admin %>
   <%= render partial: "comments/form", locals: {commented_on: @album, parent: nil} %>
   <% end %>
-
-  <%= link_to 'Retour', albums_path %>
+  <br>
+  <%= link_to "Retour à l'accueil", albums_path, class:"btn btn-light"%>
 </div>
