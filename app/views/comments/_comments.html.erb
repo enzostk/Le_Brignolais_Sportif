@@ -17,7 +17,7 @@
           <%= render partial: 'comments/form', locals: { commented_on: @article || @event || @album, parent: comment } %>
         </div>
       <% end %>
-        <br>
+      <br>
 
       <% comment.comments.each do |c1| %>
         <div class="card border-light card-comment mt-2">
@@ -32,7 +32,7 @@
               <% if current_user && current_user.subscriber %>
                 <button class="btn btn-light comment-form-display">Répondre</button>
                 <div class="comment-form">
-                 <%= render partial: 'comments/form', locals: { commented_on: @article || @event || @album, parent: c1 } %>
+                  <%= render partial: 'comments/form', locals: { commented_on: @article || @event || @album, parent: c1 } %>
                 </div>
               <% end %>
               <br>
@@ -53,6 +53,7 @@
       <% end %>
     </div>
   </div>
+  <br>
   <% end %>
 </div>
 

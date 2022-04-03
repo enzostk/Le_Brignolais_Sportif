@@ -18,10 +18,9 @@
                   <div class="small text-muted b"><%= article.created_at %></div>
                   <h2 class="card-title b"><%= article.title.html_safe %></h2>
                   <p class="card-text b"><%=  truncate(article.content.html_safe, length:100) %></p>
-                  <a><%= link_to "Lire la suite →", article, class:"btn btn-primary" %></a>
+                  <%= link_to "Lire la suite →", article, class:"btn btn-primary" %>
                </div>
             <br>
-            <!-- End of the loop -->
          </div>
          <% end %>
       </div>
@@ -35,7 +34,7 @@
                <div class="card-body b">
                    <% @articles.each do |article| %>
                    <tr>
-                   <td>	<a href="<%= article_path(article.id) %>"><%= article.title %> </td>
+                   <td>	<%= link_to article.title , article_path(article.id) %></td>
                    </tr><br><br>
                    <% end %>
                </div>
@@ -44,17 +43,17 @@
          <!-- Side widget-->
 
          <div class="card mb-4" style="max-width: 18rem;">
-            <div class="card-body b">
+            <div class="card-body">
               <%= image_tag (Partner.all.sample).image_url, size: 100*50 %>
             </div>
          </div>
          <div class="card mb-4" style="max-width: 18rem;">
-            <div class="card-body b">
+            <div class="card-body">
               <%= image_tag (Partner.all.sample).image_url, size: 100*50 %>
             </div>
          </div>
          <div class="card mb-4" style="max-width: 18rem;">
-            <div class="card-body b">
+            <div class="card-body">
               <%= image_tag (Partner.all.sample).image_url, size: 100*50 %>
             </div>
          </div>

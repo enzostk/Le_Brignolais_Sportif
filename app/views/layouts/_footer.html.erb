@@ -1,12 +1,13 @@
 <footer class="bd-footer py-4 mt-4 bg-light">
-    <div class="container py-4">
+  <div class="container py-4">
       <div class="row">
        
         <div class="col-12 col-lg-2 offset-lg-1 mb-3 mt-lg-4">
-            <h5><a class="footerlink" href="#">Ils parlent de nous</a></h5>
 
-          </div>
-
+            <h5>Ils parlent de nous</h5>
+        </div>
+        
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3 ">
 
           <h5>Team</h5>
           <ul class="list-unstyled ">
@@ -22,8 +23,11 @@
               <i class="fab fa-github icon text-danger"></i>
               <%= link_to "Enzo Bonnet", "https://github.com/enzostk", class:"footerlink" %>
             <li>
+
               <i class="fas fa-tombstone-alt"></i>
               <%= link_to "🪦Samuel Khalifa ❓", "https://github.com/Samuelkhalifa", class:"footerlink" %>
+            </li>
+
 
           </ul>
         </div>
@@ -33,16 +37,17 @@
           <h5>Contact</h5>
             <ul class="list-unstyled">
               <li>
-                <a class="footerlink">80 RUE SZAMOTULY à BRIGNOLES (83170)</a>
+                80 RUE SZAMOTULY à BRIGNOLES (83170)
                </li>
               <li>
-                <a class="footerlink">01.02.03.04.05</a>
+                01.02.03.04.05
               </li>
               <li>
-                <a class="footerlink">email@email.fr</a>
+                email@email.fr
               </li>
             </ul>
         </div>
+
         
         <div class="col-1 col-lg-2  col-sm-5 col-xs-5 mb-3 icons-wrapper">
 
@@ -55,16 +60,37 @@
              </ul>
 
         </div>
+
            
+        <div class="col-1 col-lg-2  col-sm-5 col-xs-5 mb-3 icons-wrapper">
+
+            <ul class="social-links icon-content list-unstyled">
+              <li><%= link_to image_tag('icone/footer-lbs.png'), root_path %></li>
+
+                <%= link_to 'https://www.facebook.com/profile.php?id=100069786000800'  do%>
+                  <i class="fab fa-facebook-f"></i>
+                <%end %>
+
+                <%= link_to 'https://twitter.com/lbs83170', class:"" do%>
+                  <i class="fab fa-twitter"></i>
+                <%end %>
+
+                <%= link_to '#'  do%>
+                  <i class="fab fa-instagram"></i>
+                <%end %>
+                <%= link_to '#'  do%>
+                  <i class="fab fa-linkedin-in"></i>
+                <%end %>
+            </ul>
+        </div>  
+        
         <div class="col-12 col-lg-10 offset-lg-1 mb-3 mt-lg-4">
           <h5 class="copyright">© 2010 - 2022 Le Brignolais Sportif. All Rights Reserved. Powereb by 4MA</h5>
         </div>
 
       </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
-<div id=scrollUp>
-    <a href="#top"><%= image_tag("scrollup.png") %> </a>
-</div>
+
 
