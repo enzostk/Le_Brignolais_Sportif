@@ -1,4 +1,4 @@
-  /* Icons wrappers */
+  /* ICONS WRAPPERS */
   .icons-wrapper {
     display: flex;
     align-items: center;
@@ -15,6 +15,9 @@
     margin: 0 24px;
   }
 
+/* #########################################################  */
+
+/* RESPONSIVE ICONS WRAPPERS */
 
   @media (max-width: 991px) { 
 
@@ -29,5 +32,3 @@
         .icons-wrapper{margin-left: 0px}
     
        }}
-
-
