@@ -16,26 +16,25 @@ Event.destroy_all
 event = Event.create!(
   title: "BlackSide",
   category: "MMA",
-  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/275239902_5202673046431414_4694191393231142211_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=lJD06zcdBNwAX94VQcY&_nc_ht=scontent-mrs2-2.xx&oh=00_AT92ZzTG-snOxr1sw_QCinyJfq05d6fGN4XbzFlZwnSgNw&oe=624B49E2
-  "
+  image_url: "https://zupimages.net/up/22/14/d2gd.jpg"
 )
 
 event = Event.create!(
   title: "Programme du week-end au HCB",
   category: "Handball",
-  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/276319100_460208299233827_8040392121839928326_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=m0U3aZiPiogAX-qz7iy&_nc_ht=scontent-mrs2-2.xx&oh=00_AT-yzOPy_pR7YqX-eS1cuP3-_etGnzXDX2Gf6l30R6nLRA&oe=624B3D91"
+  image_url: "https://zupimages.net/up/22/14/6xdj.jpg"
 )
 
 event = Event.create!(
   title: "Tirage quart de final aller - 2ème série",
   category: "Rugby",
-  image_url: "https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/277002276_1032245934049183_4602230424838445673_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=a26aad&_nc_ohc=sdNnAif3ObYAX_qwS2C&tn=_8HpgVW1jtgPASvO&_nc_ht=scontent-mrs2-1.xx&oh=00_AT_Nahg91jmiZoYYeI4-NyxCBtOf8SDVKv-CLpce86zGHw&oe=624BF659"
+  image_url: "https://zupimages.net/up/22/14/8qj0.jpg"
 )
 
 event = Event.create!(
   title: "U13 Féminines Pré-Excellence",
   category: "Football",
-  image_url: "https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/276014775_1677042979297365_1934884356271205509_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=SXqsAyNehnwAX8vtgGD&tn=_8HpgVW1jtgPASvO&_nc_ht=scontent-mrs2-1.xx&oh=00_AT-jOE24ByinzMuDPqEgsROuF9m45al0Zy-nn2iIFHTP4w&oe=624BEB90"
+  image_url: "https://zupimages.net/up/22/14/x5df.jpg"
 )
 
 album = Album.create!(
@@ -88,7 +87,7 @@ article = Article.create!(
   Ce samedi matin, notre association aura le plaisir d'accueillir un plateau Débutant dédié à nos catégories Féminines U6/U8 et U9/U11. Ce sont 14 équipes équipes représentant 10 clubs qui seront accueillies à Salvatori. Un superbe moment de football.
   Le dimanche, nos U15 D1 auront fort à faire en recevant ni plus ni moins que le leader de leur championnat, la formation de Cuers / Pierrefeu. Mais nos troupes ont démontré une capacité à élever leur niveau de jeu dans ce type de rdv. Une belle rencontre en perspective. 
   Dans les deux cas, nul doute que votre soutien aura tout son rôle. Nous vous attendons nombreux autour du terrain 😉.",
-  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/277176086_504148694696189_833991477022527802_n.png?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=H-Thfk53YJ4AX-UjfH6&_nc_ht=scontent-mrs2-2.xx&oh=00_AT8KimFKuZnjd4RsdO1DGi6HONghUKghSey2QlwkytgXiA&oe=624AB7B4"
+  image_url: "https://zupimages.net/up/22/14/94uv.png"
 );
 
 article = Article.create!(
@@ -96,14 +95,14 @@ article = Article.create!(
   category: "Ping-pong",
   content: " ❌ Défaite de l'équipe Jeune Vs Fréjus, avec beaucoup de matches accrochés qui laissent de bonnes perspectives pour cette équipe créée il y a moins d'une demi-saison (20-10),
   ✅ Victoire de l'équipe Régionale 2 Vs Sorgues (12-2),",
-  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/275007861_257549939914538_5954335758012002561_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=9nI9Nl0BgrcAX86Xp_b&_nc_ht=scontent-mrs2-2.xx&oh=00_AT84idh9j4cN47wrDhvzqmCptjZEyKzT4e4X2SYrymOboQ&oe=624B5730"
+  image_url: "https://zupimages.net/up/22/14/1ks3.jpg"
 );
 
 article = Article.create!(
   title: "🏉 Juniors du RAS Provence Verte (Brignoles Provence XV + RSMXV) contre CARF du Golfe 🏉",
   category: "Rugby",
   content: "Voici l'album photo de la belle victoire des Juniors du RAS Provence Verte (Brignoles Provence XV + RSMXV) contre CARF du Golfe, dans un vent frigorifique en ce samedi après-midi ! Score 18-7 ! 💪 (clique sur l'appareil photo)",
-  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/275436431_260403476295851_7407448428083430559_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=6t7G-u1Dzk0AX_hypIL&_nc_ht=scontent-mrs2-2.xx&oh=00_AT_IrFPh5w937CDo0Yphn48jqu4mdBpK_nxh8Kk1DMPegA&oe=624B135F"
+  image_url: "https://zupimages.net/up/22/14/338b.jpg"
 );
 
 article = Article.create!(
@@ -111,14 +110,14 @@ article = Article.create!(
   category: "Volleyball",
   content: "🏐 Le match en photos des seniors de ce lundi soir au gymnase du Vabre :
    (clique sur l'appareil photo)",
-  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/275872314_261946202808245_4769172775278010298_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=5V-r6N_zrhEAX8-kwuO&_nc_ht=scontent-mrs2-2.xx&oh=00_AT9CgqWTOFCNQ0JlXjIbZVgoHzIT0tJuWY9Z0EIcjuOK4A&oe=62499194"
+  image_url: "https://zupimages.net/up/22/14/8maw.jpg"
 );
 
 article = Article.create!(
   title: "Ce week-end sur la ville de Brignoles",
   category: "Badminton",
   content: "- Championnats du Var Jeunes et Vétérans sur toute la journée au gymnase Jean Moulin.",
-  image_url: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/276090166_268769098792622_4451485360145238520_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=un_L-dR0xuQAX-a6ceh&_nc_ht=scontent-mrs2-2.xx&oh=00_AT_ocDUFsgxQputA9fvSdsp5QQB46w8BBmlQKVkbOxbvaA&oe=624A3469"
+  image_url: "https://zupimages.net/up/22/14/6v4q.jpg"
 );
 
 

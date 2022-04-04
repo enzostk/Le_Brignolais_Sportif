@@ -3,9 +3,9 @@
 	<div class="text-center">
 		<h1>L'annuaire des associations sportives brignolaises !</h1>
 		<h5>
-			Cliquez sur leur logo pour ouvrir leur page avec tous leurs renseignements.
+			Accédez aux informations des clubs en cliquant sur leur nom.
 		</h5>
-		<br>
+		<hr>
 	</div>
 
 	<div class="row">
@@ -21,11 +21,8 @@
 							<%= club.category %>
 						</h4>
 						<h5 class="subtitle mb-3">
-							<%= club.name %>
+							<%= link_to club.name, club.link_to, class:"btn btn-signup" %>
 						</h5>
-						<h6>
-							<%= link_to "⟴", club.link_to, class:"btn btn-sm btn-primary" %>
-						</h6>
 					</div>
 				</div>
 			</div>
