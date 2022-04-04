@@ -15,18 +15,47 @@
 //= require_tree .
 
 
-// Mon bouton scroll up 
+// ##################################
 
-// Je fais une fonction qui va m'aider à appeller un bouton qui ramenera l'utilisateur vers le haut de la page grâce à une ancre sans besoin de scroller 
-// On remarque que le bouton n'apparaît pas lorsqu'on est dans le header 
+// adding aos js library
+
+
+// ##################################
+
+
+// adding sticky navbar
+
+window.addEventListener("scroll", function()
+{
+
+if(this.pageYOffset > 60)
+{
+    document.querySelector(".header").classList.add("sticky");
+}
+
+else 
+{
+    document.querySelector(".header").classList.remove("sticky");
+}
+
+}
+);
+
+
+//  adding scroll up
+// function allowing to call a button on click to reach the top screen without scroll
+
 jQuery(function(){
-  $(function () {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 200 ) {
-        $('#scrollUp').css('right','10px');
-          } else {
-            $('#scrollUp').removeAttr( 'style' );
-        }
-      });
-  });
+
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 200 ) {
+                $('#scrollUp').css('right','10px');
+            } else {
+                $('#scrollUp').removeAttr( 'style' );
+            }
+
+        });
+    });
 });
+

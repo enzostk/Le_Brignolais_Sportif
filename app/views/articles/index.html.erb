@@ -1,5 +1,5 @@
 <%# Navbar administrateur  %> 
-<%#  la notice est commune à toute les pages   %> 
+<%#  the id notice is shared among all pages   %> 
 <div class="container">
    <div class="row">
 
@@ -9,9 +9,10 @@
          <h1>Retrouvez tous les articles du moment</h1><br> 
       </div>   
       <div class="col-lg-8">
+
       
          <% @articles.each do |article| %>
-         <div class="card mb-4">
+         <div class="card mb-4 img-box">
                  <%= image_tag article.image_url, size: 840*200 %>
                <div class="card-body">
                   <div class="small text-muted b"><%= article.created_at %></div>

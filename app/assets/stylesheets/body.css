@@ -3,7 +3,6 @@
 body {
     background-color: var(--second)!important;
     color: white!important;
-   /* border: 3px solid #73AD21; */
     margin: 0;
 }
 
@@ -21,4 +20,3 @@ label {
 
     color: var(--prim);
 }
-

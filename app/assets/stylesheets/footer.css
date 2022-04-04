@@ -22,11 +22,13 @@
 
 }
 
+/* #########################################################  */
+
+ /* STYLE SCROLL BUTTON */
+
  #scrollUp
 {
 position: fixed;
 bottom : 10px;
 right: -10px;
-/* opacity: 0.5; */
 }
-
