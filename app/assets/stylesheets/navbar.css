@@ -1,9 +1,14 @@
 /* = require_self */
 
 
-.header 
-{
 
+/* #########################################################  */
+
+/* STYLE STICKY-NAVBAR  */
+
+
+
+.header {
     padding: 12px 0;
     background-color: var(--dark-light);
     position: fixed;
@@ -12,6 +17,7 @@
     width: 100%;
     z-index: 99;
 }
+
 
 .header::before
 {
@@ -37,7 +43,9 @@
 }
 
 
+/* #########################################################  */
 
+/* STYLE NAVBAR  */
 
 .bg-nav {
     background-color: var(--prim)!important;
@@ -122,4 +130,29 @@ input[type="search"], input[type="search"]::selection {
 .btn-nav2:hover {
   color: var(--second)!important;
   background-color: var(--prim) !important;
+}
+
+
+
+/* #########################################################  */
+
+/* RESPONSIVE STICKY-NAVBAR  */
+
+
+@media screen and (min-width: 991px){
+    .header {
+    padding: 12px 0;
+    background-color: var(--dark-light);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        position: relative;
+    }
 }
