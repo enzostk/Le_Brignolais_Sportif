@@ -6,14 +6,15 @@
       <!-- Blog entries-->
 
       <div class="text-center">
-         <h1>Retrouvez tous les articles du moment</h1><br> 
+         <h1>Retrouvez tous les articles du moment</h1>
+         <hr>
       </div>   
       <div class="col-lg-8">
 
       
          <% @articles.each do |article| %>
          <div class="card mb-4 img-box">
-                 <%= image_tag article.image_url, size: 840*200 %>
+                 <%= image_tag article.image_url %>
                <div class="card-body">
                   <div class="small text-muted b"><%= article.created_at %></div>
                   <h2 class="card-title b"><%= article.title.html_safe %></h2>
