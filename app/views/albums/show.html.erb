@@ -1,22 +1,21 @@
 <div class="container">
-  <p id="notice"><%= notice %></p>
-  <p>
-    <strong>Titre :</strong>
-    <%= @album.title %>
-  </p>
+  <p id="notice"><%= notice %></p><br/>
+  <h3>
+    &nbsp&nbsp&nbsp&nbsp<strong><%= @album.title %></strong>
+  </h3><br/>
 
   <p>
-    <strong>Categorie :</strong>
+    &nbsp&nbsp<strong>Categorie :</strong>
     <%= @album.category %>
-  </p>
+  </p><br/>
 
   <p>
     <%= image_tag @album.image_url %>
   </p>
 
   <p>
-    <strong>Voir l'album :</strong>
-    <%= link_to "👉 Album photo", @album.link_to %>
+    <strong>Voir l'album :</strong>&nbsp&nbsp
+    <%= link_to "👉 Album photo", @album.link_to, class:"btn btn-primary" %>
   </p>
 
   <%= render partial: "comments/comments", locals: {commented_on: @album, parent: nil} %>
@@ -24,5 +23,5 @@
   <%= render partial: "comments/form", locals: {commented_on: @album, parent: nil} %>
   <% end %>
   <br>
-  <%= link_to "Retour à l'accueil", albums_path, class:"btn btn-light"%>
+  <%= link_to "Retour à la liste des albums", albums_path, class:"btn btn-light"%>
 </div>
