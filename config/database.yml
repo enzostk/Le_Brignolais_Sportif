@@ -83,3 +83,9 @@ production:
   database: Le_Brignolais_Sportif_App_production
   username: Le_Brignolais_Sportif_App
   password: <%= ENV['LE_BRIGNOLAIS_SPORTIF_APP_DATABASE_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: database_name
+  username: enzostk
+  password: 'azer321ty'
