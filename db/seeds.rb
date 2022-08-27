@@ -129,9 +129,9 @@ partner = Partner.create!(
 );
 
 partner = Partner.create!(
-  name: "Aviva",
+  name: "Abeille Assurances",
   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
-  link_to: "https://agences.aviva.fr/brignoles/",
+  link_to: "https://agences.abeille-assurances.fr/brignoles/",
   image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000110-66cfb66cfd/450/Moyen%20-%20Aviva.png?ph=35f5dda702"
 );
 
@@ -343,14 +343,14 @@ club = Club.create!(
   name: "Rugby Provence ",
   category:  "Rugby",
   link_to: "https://rugbyprovencexv.fr/",
-  image_url: "https://zupimages.net/up/22/13/ubrv.png"
+  image_url: "https://zupimages.net/up/22/13/r3pr.jpg"
 );
   
 club = Club.create!(  
   name: "Seniors du Carami",
   category:  "Bien vieillir par le sport",
   link_to: "https://www.les-seniors-du-carami.fr/",
-  image_url: "https://zupimages.net/up/22/13/r3pr.jpg"
+  image_url: "https://zupimages.net/up/22/13/ubrv.png"
 );
   
 club = Club.create!(
@@ -363,14 +363,14 @@ club = Club.create!(
   name: "Tennis Club de Brignoles",
   category:  "Tennis",
   link_to: "https://www.facebook.com/profile.php?id=100057109344386",
-  image_url: "https://zupimages.net/up/22/13/mso7.jpg"
+  image_url: "https://zupimages.net/up/22/13/923h.jpg"
 );
 
 club = Club.create!(
   name: "Tennis de Table Brignolais",
   category:  "Tennis de Table",
   link_to: "https://www.facebook.com/groups/616193955745671",
-  image_url: "https://zupimages.net/up/22/13/923h.jpg"
+  image_url: "https://zupimages.net/up/22/13/mso7.jpg"
 );
 
 club = Club.create!(
