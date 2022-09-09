@@ -77,16 +77,43 @@ album = Album.create!(
   image_url: "https://zupimages.net/up/22/36/ej02.jpg"
 );
 
-# article = Article.create!(
-#   title: "⭐ Les affiches du week-end ⭐",
-#   category: "AS Brignoles",
-#   content: "Chers Supporteurs,
-#   Ce n'est pas une mais deux manifestations que nous avons souhaité mettre en avant pour le week-end à venir.
-#   Ce samedi matin, notre association aura le plaisir d'accueillir un plateau Débutant dédié à nos catégories Féminines U6/U8 et U9/U11. Ce sont 14 équipes équipes représentant 10 clubs qui seront accueillies à Salvatori. Un superbe moment de football.
-#   Le dimanche, nos U15 D1 auront fort à faire en recevant ni plus ni moins que le leader de leur championnat, la formation de Cuers / Pierrefeu. Mais nos troupes ont démontré une capacité à élever leur niveau de jeu dans ce type de rdv. Une belle rencontre en perspective. 
-#   Dans les deux cas, nul doute que votre soutien aura tout son rôle. Nous vous attendons nombreux autour du terrain 😉.",
-#   image_url: "https://zupimages.net/up/22/14/94uv.png"
-# );
+article = Article.create!(
+  title: "C.S.Brignoles",
+  category: "Les performances appellent les infrastructures",
+  content: "Rencontre réalisée le 6 juillet 2022",
+  image_url: "https://zupimages.net/up/22/36/f70v.png"
+);
+article = Article.create!(
+  title: "Forum des associations",
+  category: "Divers",
+  content: "10 septembre 2022",
+  image_url: "https://zupimages.net/up/22/36/pbio.jpg"
+);
+article = Article.create!(
+  title: "Coup de Coeur",
+  category: "Jeet Kune Do",
+  content: "Rencontre des jumeaux Nicolas et Damien",
+  image_url: "https://zupimages.net/up/22/36/m7gn.png"
+);
+article = Article.create!(
+  title: "Au bout du suspense!",
+  category: "A.S.Brignoles",
+  content: "Résultat Coupe de France",
+  image_url: "https://zupimages.net/up/22/36/zmfv.jpg"
+);
+article = Article.create!(
+  title: "Centre aquatique fermé",
+  category: "Crise énergétique",
+  content: "Vert Marine",
+  image_url: "https://zupimages.net/up/22/36/rx7o.jpg"
+);
+article = Article.create!(
+  title: "Pass-Sport",
+  category: "Le Pass'Sport est reconduit pour la saison 2022-2023",
+  content: "Reconduction de l'allocation PassSport",
+  image_url: "https://zupimages.net/up/22/36/9u36.png"
+);
+
 
 partner = Partner.create!(
   name: "Miroiterie Brignolaise",
