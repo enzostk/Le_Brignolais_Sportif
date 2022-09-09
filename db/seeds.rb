@@ -29,7 +29,7 @@ event = Event.create!(
 event = Event.create!(
   title: "Tirage quart de final aller - 2ème série",
   category: "Rugby",
-  image_url: "https://zupimages.net/up/22/36/e9m9.png"
+  image_url: "https://zupimages.net/up/22/36/b9fd.png"
 )
 
 event = Event.create!(
@@ -66,7 +66,7 @@ result = Result.create!(
   title:"Les résultats du 03.09 / 04.09",
   content:"nil",
   category:"nil",
-  image_url:"https://zupimages.net/up/22/36/rutq.jpg"
+  image_url:"https://zupimages.net/up/22/36/5r9i.jpg"
 )
 
 
