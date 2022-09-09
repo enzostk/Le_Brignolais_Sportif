@@ -12,29 +12,61 @@ Article.destroy_all
 Partner.destroy_all
 Club.destroy_all
 Event.destroy_all
+Result.destroy_all
 
 event = Event.create!(
   title: "BlackSide",
   category: "MMA",
-  image_url: "https://zupimages.net/up/22/14/d2gd.jpg"
+  image_url: "https://zupimages.net/up/22/36/k033.jpg"
 )
 
 event = Event.create!(
   title: "Programme du week-end au HCB",
   category: "Handball",
-  image_url: "https://zupimages.net/up/22/14/6xdj.jpg"
+  image_url: "https://zupimages.net/up/22/36/l0zv.jpg"
 )
 
 event = Event.create!(
   title: "Tirage quart de final aller - 2ème série",
   category: "Rugby",
-  image_url: "https://zupimages.net/up/22/14/8qj0.jpg"
+  image_url: "https://zupimages.net/up/22/36/e9m9.png"
 )
 
 event = Event.create!(
   title: "U13 Féminines Pré-Excellence",
   category: "Football",
-  image_url: "https://zupimages.net/up/22/14/x5df.jpg"
+  image_url: "https://zupimages.net/up/22/36/fegy.jpg"
+)
+
+event = Event.create!(
+  title: "U13 Féminines Pré-Excellence",
+  category: "Football",
+  image_url: "https://zupimages.net/up/22/36/uau3.jpg"
+)
+
+event = Event.create!(
+  title: "U13 Féminines Pré-Excellence",
+  category: "Football",
+  image_url: "https://zupimages.net/up/22/36/vlka.jpg"
+)
+
+event = Event.create!(
+  title: "U13 Féminines Pré-Excellence",
+  category: "Football",
+  image_url: "https://zupimages.net/up/22/36/3kso.jpg"
+)
+
+event = Event.create!(
+  title: "U13 Féminines Pré-Excellence",
+  category: "Football",
+  image_url: "https://zupimages.net/up/22/36/hr3q.jpg"
+)
+
+result = Result.create!(
+  title:"Les résultats du 03.09 / 04.09",
+  content:"nil",
+  category:"nil",
+  image_url:"https://zupimages.net/up/22/36/rutq.jpg"
 )
 
 
@@ -45,109 +77,87 @@ album = Album.create!(
   image_url: "https://zupimages.net/up/22/36/ej02.jpg"
 );
 
-article = Article.create!(
-  title: "⭐ Les affiches du week-end ⭐",
-  category: "AS Brignoles",
-  content: "Chers Supporteurs,
-  Ce n'est pas une mais deux manifestations que nous avons souhaité mettre en avant pour le week-end à venir.
-  Ce samedi matin, notre association aura le plaisir d'accueillir un plateau Débutant dédié à nos catégories Féminines U6/U8 et U9/U11. Ce sont 14 équipes équipes représentant 10 clubs qui seront accueillies à Salvatori. Un superbe moment de football.
-  Le dimanche, nos U15 D1 auront fort à faire en recevant ni plus ni moins que le leader de leur championnat, la formation de Cuers / Pierrefeu. Mais nos troupes ont démontré une capacité à élever leur niveau de jeu dans ce type de rdv. Une belle rencontre en perspective. 
-  Dans les deux cas, nul doute que votre soutien aura tout son rôle. Nous vous attendons nombreux autour du terrain 😉.",
-  image_url: "https://zupimages.net/up/22/14/94uv.png"
-);
-
-article = Article.create!(
-  title: "🏓 Les résultats du week-end du tennis de table brignolais :",
-  category: "Ping-pong",
-  content: " ❌ Défaite de l'équipe Jeune Vs Fréjus, avec beaucoup de matches accrochés qui laissent de bonnes perspectives pour cette équipe créée il y a moins d'une demi-saison (20-10),
-  ✅ Victoire de l'équipe Régionale 2 Vs Sorgues (12-2),",
-  image_url: "https://zupimages.net/up/22/14/1ks3.jpg"
-);
-
-article = Article.create!(
-  title: "🏉 Juniors du RAS Provence Verte (Brignoles Provence XV + RSMXV) contre CARF du Golfe 🏉",
-  category: "Rugby",
-  content: "Voici l'album photo de la belle victoire des Juniors du RAS Provence Verte (Brignoles Provence XV + RSMXV) contre CARF du Golfe, dans un vent frigorifique en ce samedi après-midi ! Score 18-7 ! 💪 (clique sur l'appareil photo)",
-  image_url: "https://zupimages.net/up/22/14/338b.jpg"
-);
-
-article = Article.create!(
-  title: "🏐 Seniors Mixte du Volley Ball Brignoles 🏐",
-  category: "Volleyball",
-  content: "🏐 Le match en photos des seniors de ce lundi soir au gymnase du Vabre :
-   (clique sur l'appareil photo)",
-  image_url: "https://zupimages.net/up/22/14/8maw.jpg"
-);
-
-article = Article.create!(
-  title: "Ce week-end sur la ville de Brignoles",
-  category: "Badminton",
-  content: "- Championnats du Var Jeunes et Vétérans sur toute la journée au gymnase Jean Moulin.",
-  image_url: "https://zupimages.net/up/22/14/6v4q.jpg"
-);
-
+# article = Article.create!(
+#   title: "⭐ Les affiches du week-end ⭐",
+#   category: "AS Brignoles",
+#   content: "Chers Supporteurs,
+#   Ce n'est pas une mais deux manifestations que nous avons souhaité mettre en avant pour le week-end à venir.
+#   Ce samedi matin, notre association aura le plaisir d'accueillir un plateau Débutant dédié à nos catégories Féminines U6/U8 et U9/U11. Ce sont 14 équipes équipes représentant 10 clubs qui seront accueillies à Salvatori. Un superbe moment de football.
+#   Le dimanche, nos U15 D1 auront fort à faire en recevant ni plus ni moins que le leader de leur championnat, la formation de Cuers / Pierrefeu. Mais nos troupes ont démontré une capacité à élever leur niveau de jeu dans ce type de rdv. Une belle rencontre en perspective. 
+#   Dans les deux cas, nul doute que votre soutien aura tout son rôle. Nous vous attendons nombreux autour du terrain 😉.",
+#   image_url: "https://zupimages.net/up/22/14/94uv.png"
+# );
 
 partner = Partner.create!(
   name: "Miroiterie Brignolaise",
   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
   link_to: "https://www.miroiterie-brignolaise.com/",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000112-112e7112e9/450/Grand%20-%20Miroiterie%20Brignolaise.png?ph=35f5dda702"
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000112-112e7112e9/450/Grand%20-%20Miroiterie%20Brignolaise.png?ph=35f5dda702",
+  flyer:"https://zupimages.net/up/22/36/rkwc.jpg"
 );
 
 partner = Partner.create!(
   name: "Abeille Assurances",
   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
   link_to: "https://agences.abeille-assurances.fr/brignoles/",
-  image_url: "https://zupimages.net/up/22/36/we5t.jpg"
+  image_url: "https://zupimages.net/up/22/36/we5t.jpg",
+  flyer:"https://zupimages.net/up/22/36/51tn.jpg"
 );
 
 partner = Partner.create!(
   name: "Elixir Coiffure",
   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
   link_to: "https://www.facebook.com/librairielebateaublanc/",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000141-4099b4099c/450/Moyen%20-%20Elixir%20-%20Copie-4.jpg?ph=35f5dda702"
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000141-4099b4099c/450/Moyen%20-%20Elixir%20-%20Copie-4.jpg?ph=35f5dda702",
+  flyer:"https://zupimages.net/up/22/36/4zwt.jpg"
 );
 
 partner = Partner.create!(
   name: "Le Bateau Blanc",
   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
   link_to: "https://www.facebook.com/groups/358933790814543",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000139-d6444d6446/450/Sans%20titre.png?ph=35f5dda702"
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000139-d6444d6446/450/Sans%20titre.png?ph=35f5dda702",
+  flyer:"https://zupimages.net/up/22/36/3fwj.jpg"
 );
 
 partner = Partner.create!(
   name: "O four",
   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
   link_to: "https://www.facebook.com/O-four-105055051775418",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000155-f220cf220e/450/Moyen%20-%20O%20Four-2.jpg?ph=35f5dda702"
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000155-f220cf220e/450/Moyen%20-%20O%20Four-2.jpg?ph=35f5dda702",
+  flyer:"https://zupimages.net/up/22/36/mk6e.jpg"
 );
 
 partner = Partner.create!(
   name: "Le Croque Bedaine",
   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
   link_to: "https://www.facebook.com/le.croque.bedaine.brignoles",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000300-eac4deac4f/450/Moyen%20-%20Le%20Croque%20Bedaine.jpg?ph=35f5dda702"
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000300-eac4deac4f/450/Moyen%20-%20Le%20Croque%20Bedaine.jpg?ph=35f5dda702",
+  flyer:"https://zupimages.net/up/22/36/1v92.jpg"
 );
 
 partner = Partner.create!(
   name: "Allo Taxi Romain",
   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
   link_to: "https://www.allo-taxi-romain.fr/transport",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000301-c517dc5180/450/Moyen%20-%20Allo%20Taxi%20Romain.jpg?ph=35f5dda702"
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000301-c517dc5180/450/Moyen%20-%20Allo%20Taxi%20Romain.jpg?ph=35f5dda702",
+  flyer:"https://zupimages.net/up/22/36/7db7.jpg"
 );
 
 partner = Partner.create!(
   name: "Un jour un Ange",
   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
   link_to: "https://fleuristes-et-fleurs.com/fleuriste/un-jour-un-ange-brignoles-83170",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000111-576a5576a6/450/Petit%20-%20Un%20jour%20un%20ange.png?ph=35f5dda702"
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000111-576a5576a6/450/Petit%20-%20Un%20jour%20un%20ange.png?ph=35f5dda702",
+  flyer:"https://zupimages.net/up/22/36/w6ll.jpg"
 );
 
 partner = Partner.create!(
   name: "Hema Services",
   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
   link_to: "https://www.hemaservices.fr/",
-  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000150-d6815d6817/450/Petit%20-%20Hema%20Services.jpg?ph=35f5dda702"
+  image_url: "https://d6scj24zvfbbo.cloudfront.net/1039a07ebeb91d83381519023b5ecf79/200000150-d6815d6817/450/Petit%20-%20Hema%20Services.jpg?ph=35f5dda702",
+  flyer:"https://zupimages.net/up/22/36/qgmd.jpg"
 );
 
 
