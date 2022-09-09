@@ -37,12 +37,6 @@ event = Event.create!(
   image_url: "https://zupimages.net/up/22/14/x5df.jpg"
 )
 
-# album = Album.create!(
-#   title: "🏸 Badminton - Vétérans - 26 mars 2022",
-#   category: "Badminton",
-#   link_to: "https://photos.google.com/share/AF1QipOJfE2ECIgW2oY6Ptn8E1ZUXWbTIwmjQFOJJfTo8lOuVWxkrdZERVjAJq44Mgf7xg?key=QnZldmZiVUtOODdQbnJ5YVJBSlI0LVRVTmhkakhB",
-#   image_url: "https://zupimages.net/up/22/13/p0h0.jpg"
-# );
 
 # album = Album.create!(
 #   title: "🏸 Badminton - Vétérans - 26 mars 2022",

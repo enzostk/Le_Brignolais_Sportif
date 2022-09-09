@@ -86,7 +86,7 @@
     width: 110px!important;
   }
   
-  .btn-nav2:hover {
+.btn-nav2:hover {
     color: var(--second)!important;
     background-color: var(--prim) !important;
   }
