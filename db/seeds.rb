@@ -38,54 +38,12 @@ event = Event.create!(
 )
 
 
-# album = Album.create!(
-#   title: "🏸 Badminton - Vétérans - 26 mars 2022",
-#   category: "Badminton",
-#   link_to: "https://photos.google.com/share/AF1QipOJfE2ECIgW2oY6Ptn8E1ZUXWbTIwmjQFOJJfTo8lOuVWxkrdZERVjAJq44Mgf7xg?key=QnZldmZiVUtOODdQbnJ5YVJBSlI0LVRVTmhkakhB",
-#   image_url: "https://zupimages.net/up/22/13/p0h0.jpg"
-# );
-
-# album = Album.create!(
-#   title: "🏸 Badminton - Vétérans - 26 mars 2022",
-#   category: "Badminton",
-#   link_to: "https://photos.google.com/share/AF1QipOJfE2ECIgW2oY6Ptn8E1ZUXWbTIwmjQFOJJfTo8lOuVWxkrdZERVjAJq44Mgf7xg?key=QnZldmZiVUtOODdQbnJ5YVJBSlI0LVRVTmhkakhB",
-#   image_url: "https://zupimages.net/up/22/13/p0h0.jpg"
-# );
-
-# album = Album.create!(
-#   title: "🏑 Roller Hockey Brignolais - 23 mars 2022",
-#   category: "Hockey",
-#   link_to: "https://photos.google.com/share/AF1QipNlSUDiy8nj8vzrmVbOpJbpeJwux0JBiXiUrXlY8O4ZALwtqadWwAJjfo9hok6I6Q?key=SWJPRXhMTjhGVnVzc0ZreVNrOHNaVXhrZHhnWF93",
-#   image_url: "https://zupimages.net/up/22/13/c7qy.jpg"
-# );
-
-# album = Album.create!(
-#   title: "⚽ Futsal Brignoles - 21 mars 2022",
-#   category: "Football",
-#   link_to: "https://photos.google.com/share/AF1QipNfOYNyTlhv1g03PHlMtg1R0s9VO4yGithgBuXt5RqiWIhvMiaX57_t202rpOfPyg?key=Y1NvNnpaeURMWVA3OWZUclYzTndwTEdRUHZ4TzZ3",
-#   image_url: "https://zupimages.net/up/22/13/l8yu.jpg"
-# );
-
-# album = Album.create!(
-#   title: "🎾 Tennis - Interclubs - 19/20 mars 2022",
-#   category: "Tennis",
-#   link_to: "https://photos.google.com/share/AF1QipOJfE2ECIgW2oY6Ptn8E1ZUXWbTIwmjQFOJJfTo8lOuVWxkrdZERVjAJq44Mgf7xg?key=QnZldmZiVUtOODdQbnJ5YVJBSlI0LVRVTmhkakhB",
-#   image_url: "https://zupimages.net/up/22/13/9qwv.jpg"
-# );
-
-# album = Album.create!(
-#   title: "🏇 Open du Var - 20 mars 2022",
-#   category: "Badminton",
-#   link_to: "https://photos.google.com/share/AF1QipOwaMeN096wcazSgIRSoQq1DrldkqyBAFwthur9JuNH1q1T8-C_20eyO-coSsSLYA?key=QVlYOV9ZQjRqdGlPMFRsdTVTZGVXbi1idGROZVJB",
-#   image_url: "https://zupimages.net/up/22/13/9n1b.jpg"
-# );
-
-# album = Album.create!(
-#   title: "🏸 CSB Volley Seniors - 14 mars 2022",
-#   category: "Volleyball",
-#   link_to: "https://photos.google.com/share/AF1QipP3nmmoMDlXavSGZGl18EB2EHXdllw242agHpsQccWhOwNJbad-XRKfMm2GooWPBQ?key=RDhQNjU3cnVGNHFoMmR5VHRndktVVU93cF9Uandn",
-#   image_url: "https://zupimages.net/up/22/13/p5d5.jpg"
-# );
+album = Album.create!(
+  title: "ASB - 1e tour Coupe de France",
+  category: "Football",
+  link_to: "https://photos.google.com/share/AF1QipMgSNZ2MkzD-fe32DV5e1yNjlER8hdKhbjANoE6yfe4pPVO3sYcmjARVTy3M5WTgA?key=eTRoSmxJMU5sZWF2U1VDa3AtUTd4RFpSejhnSVJB",
+  image_url: "https://zupimages.net/up/22/36/ej02.jpg"
+);
 
 article = Article.create!(
   title: "⭐ Les affiches du week-end ⭐",
@@ -140,7 +98,7 @@ partner = Partner.create!(
   name: "Abeille Assurances",
   description: "Lorem Ipsum, c’est du faux texte pour se donner une idée du résultat visuel avant de rédiger quoique ce soit.",
   link_to: "https://agences.abeille-assurances.fr/brignoles/",
-  image_url: "https://zupimages.net/viewer.php?id=22/36/we5t.jpg"
+  image_url: "https://zupimages.net/up/22/36/we5t.jpg"
 );
 
 partner = Partner.create!(
