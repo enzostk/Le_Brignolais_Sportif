@@ -116,6 +116,7 @@ img{
 }
 
 .home__data{
+  background-color: var(--first-color);
   text-align:center;
   word-wrap : break-word;
   overflow-wrap : break-word;
@@ -170,6 +171,7 @@ img{
   }
 
   .home__container{
+    background-color: var(--first-color);
     height: 100vh;
     grid-template-columns: repeat(2, max-content);
     grid-template-rows:  1fr;
