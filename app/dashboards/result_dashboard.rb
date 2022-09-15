@@ -14,6 +14,7 @@ class ResultDashboard < Administrate::BaseDashboard
     category: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    image_url: Field::String,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -37,6 +38,7 @@ class ResultDashboard < Administrate::BaseDashboard
     category
     created_at
     updated_at
+    image_url
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -46,6 +48,7 @@ class ResultDashboard < Administrate::BaseDashboard
     title
     content
     category
+    image_url
   ].freeze
 
   # COLLECTION_FILTERS

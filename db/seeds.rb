@@ -6,48 +6,17 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
-Album.destroy_all
 Article.destroy_all
 Partner.destroy_all
 Club.destroy_all
 Event.destroy_all
 Result.destroy_all
-
-event = Event.create!(
-  title: "BlackSide",
-  category: "MMA",
-  image_url: "https://zupimages.net/up/22/36/k033.jpg"
-)
-
-event = Event.create!(
-  title: "Programme du week-end au HCB",
-  category: "Handball",
-  image_url: "https://zupimages.net/up/22/36/l0zv.jpg"
-)
-
-event = Event.create!(
-  title: "Tirage quart de final aller - 2ème série",
-  category: "Rugby",
-  image_url: "https://zupimages.net/up/22/36/b9fd.png"
-)
+Album.destroy_all
 
 event = Event.create!(
   title: "U13 Féminines Pré-Excellence",
   category: "Football",
-  image_url: "https://zupimages.net/up/22/36/fegy.jpg"
-)
-
-event = Event.create!(
-  title: "U13 Féminines Pré-Excellence",
-  category: "Football",
-  image_url: "https://zupimages.net/up/22/36/uau3.jpg"
-)
-
-event = Event.create!(
-  title: "U13 Féminines Pré-Excellence",
-  category: "Football",
-  image_url: "https://zupimages.net/up/22/36/vlka.jpg"
+  image_url: "https://zupimages.net/up/22/36/hr3q.jpg"
 )
 
 event = Event.create!(
@@ -55,11 +24,35 @@ event = Event.create!(
   category: "Football",
   image_url: "https://zupimages.net/up/22/36/3kso.jpg"
 )
-
 event = Event.create!(
   title: "U13 Féminines Pré-Excellence",
   category: "Football",
-  image_url: "https://zupimages.net/up/22/36/hr3q.jpg"
+  image_url: "https://zupimages.net/up/22/36/vlka.jpg"
+)
+event = Event.create!(
+  title: "U13 Féminines Pré-Excellence",
+  category: "Football",
+  image_url: "https://zupimages.net/up/22/36/uau3.jpg"
+)
+event = Event.create!(
+  title: "U13 Féminines Pré-Excellence",
+  category: "Football",
+  image_url: "https://zupimages.net/up/22/36/fegy.jpg"
+)
+event = Event.create!(
+  title: "Tirage quart de final aller - 2ème série",
+  category: "Rugby",
+  image_url: "https://zupimages.net/up/22/36/b9fd.png"
+)
+event = Event.create!(
+  title: "Programme du week-end au HCB",
+  category: "Handball",
+  image_url: "https://zupimages.net/up/22/36/l0zv.jpg"
+)
+event = Event.create!(
+  title: "BlackSide",
+  category: "MMA",
+  image_url: "https://zupimages.net/up/22/36/k033.jpg"
 )
 
 result = Result.create!(
@@ -69,37 +62,24 @@ result = Result.create!(
   image_url:"https://zupimages.net/up/22/36/5r9i.jpg"
 )
 
-
 album = Album.create!(
   title: "ASB - 1e tour Coupe de France",
   category: "Football",
   link_to: "https://photos.google.com/share/AF1QipMgSNZ2MkzD-fe32DV5e1yNjlER8hdKhbjANoE6yfe4pPVO3sYcmjARVTy3M5WTgA?key=eTRoSmxJMU5sZWF2U1VDa3AtUTd4RFpSejhnSVJB",
   image_url: "https://zupimages.net/up/22/36/ej02.jpg"
 );
+album = Album.create!(
+  title: "Forum des Associations",
+  category: "Divers",
+  link_to: "https://photos.app.goo.gl/yGV4oq77abdDxTP59",
+  image_url: "https://zupimages.net/up/22/37/92mo.jpg"
+);
 
 article = Article.create!(
-  title: "C.S.Brignoles",
-  category: "Les performances appellent les infrastructures",
-  content: "Rencontre réalisée le 6 juillet 2022",
-  image_url: "https://zupimages.net/up/22/36/f70v.png"
-);
-article = Article.create!(
-  title: "Forum des associations",
-  category: "Divers",
-  content: "10 septembre 2022",
-  image_url: "https://zupimages.net/up/22/36/pbio.jpg"
-);
-article = Article.create!(
-  title: "Coup de Coeur",
-  category: "Jeet Kune Do",
-  content: "Rencontre des jumeaux Nicolas et Damien",
-  image_url: "https://zupimages.net/up/22/36/m7gn.png"
-);
-article = Article.create!(
-  title: "Au bout du suspense!",
-  category: "A.S.Brignoles",
-  content: "Résultat Coupe de France",
-  image_url: "https://zupimages.net/up/22/36/zmfv.jpg"
+  title: "Pass-Sport",
+  category: "Le Pass'Sport est reconduit pour la saison 2022-2023",
+  content: "Reconduction de l'allocation PassSport",
+  image_url: "https://zupimages.net/up/22/36/9u36.png"
 );
 article = Article.create!(
   title: "Centre aquatique fermé",
@@ -108,12 +88,29 @@ article = Article.create!(
   image_url: "https://zupimages.net/up/22/36/rx7o.jpg"
 );
 article = Article.create!(
-  title: "Pass-Sport",
-  category: "Le Pass'Sport est reconduit pour la saison 2022-2023",
-  content: "Reconduction de l'allocation PassSport",
-  image_url: "https://zupimages.net/up/22/36/9u36.png"
+  title: "Au bout du suspense!",
+  category: "A.S.Brignoles",
+  content: "Résultat Coupe de France",
+  image_url: "https://zupimages.net/up/22/36/zmfv.jpg"
 );
-
+article = Article.create!(
+  title: "Coup de Coeur",
+  category: "Jeet Kune Do",
+  content: "Rencontre des jumeaux Nicolas et Damien",
+  image_url: "https://zupimages.net/up/22/36/m7gn.png"
+);
+article = Article.create!(
+  title: "Forum des associations",
+  category: "Divers",
+  content: "10 septembre 2022",
+  image_url: "https://zupimages.net/up/22/36/pbio.jpg"
+);
+article = Article.create!(
+  title: "C.S.Brignoles",
+  category: "Les performances appellent les infrastructures",
+  content: "Rencontre réalisée le 6 juillet 2022",
+  image_url: "https://zupimages.net/up/22/36/f70v.png"
+);
 
 partner = Partner.create!(
   name: "Miroiterie Brignolaise",
@@ -345,10 +342,17 @@ club = Club.create!(
 club = Club.create!(
   name: "Rugby Provence ",
   category:  "Rugby",
-  link_to: "https://rugbyprovencexv.fr/",
-  image_url: "https://zupimages.net/up/22/13/r3pr.jpg"
+  link_to: "https://www.facebook.com/LesRosesDeLOvale",
+  image_url: "https://zupimages.net/up/22/37/92mo.jpg"
 );
   
+club = Club.create!(
+  name: "Les Rosés de l'Ovale ",
+  category:  "Rugby",
+  link_to: "https://rugbyprovencexv.fr/",
+  image_url: "https://www.zupimages.net/viewer.php?id=22/37/iqe0.jpg"
+);
+
 club = Club.create!(  
   name: "Seniors du Carami",
   category:  "Bien vieillir par le sport",

@@ -5,7 +5,7 @@
 	</div>
 	
 	<div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 g-2">
-		<% @results.each do |result| %>
+		<% @results.reverse.each do |result| %>
 		<div class="col">
 			<div class="card shadow-sm height:200px width:200px">
 				<%= (image_tag result.image_url) %>
