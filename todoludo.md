@@ -6,6 +6,7 @@
 - Page LBS
 - Choisir les clubs favoris au moment de l'inscription
 - Changer le mail
+- Pouvoir ajouter le journal via le dashboard
 
 # Page d'accueil
 
