@@ -30,6 +30,4 @@
 - fix all titles / subtitles / etc listed in Enzo's BiL's list
 
 ### We should add RGPD's form and sht
-
-
 (btw, BiL stands for Brother in Law)
